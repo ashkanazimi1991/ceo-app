@@ -1,21 +1,35 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
 import PatientChart from '../components/Dr_admin/PatientChart'
-import { BsGearFill, BsFillPeopleFill, BsFillBarChartFill } from 'react-icons/bs';
+import { BsGearFill, BsFillPeopleFill, BsFillBarChartFill, BsFillMicFill, BsFillTelephoneOutboundFill } from 'react-icons/bs';
 import { MdOutlineDashboardCustomize } from 'react-icons/md';
 import { RiMenuUnfoldFill, RiHome2Line } from 'react-icons/ri';
-import { FcOpenedFolder } from 'react-icons/fc';
+import { FcOpenedFolder, FcVideoCall,FcComboChart  } from 'react-icons/fc';
 import { FaYelp } from 'react-icons/fa';
+import { AiOutlineFolderOpen } from 'react-icons/ai';
+
 import { SiHandshake } from 'react-icons/si';
+import {GrTest, GrDocumentTest, GrHistory} from 'react-icons/gr'
 import ModalPatient from '../components/Dr_admin/ModalPatient';
+import { ChakraProvider,  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+  TableContainer, Tooltip ,extendTheme, Accordion, AccordionItem, AccordionButton, Box, AccordionIcon, AccordionPanel     } from '@chakra-ui/react';
 
 
-import Link from 'next/Link';
+
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { ChakraProvider, Tooltip ,extendTheme  } from '@chakra-ui/react'
 
 
+
+import DrawerEx from '../components/Dr_admin/DrawerEx'
 import Drawer from '../components/Dr_admin/Drawer'
 
 
@@ -187,12 +201,13 @@ const dr_admin = () => {
       </tr>
     </thead>
     <tbody>
+      
       <tr className='border-y-2 border-gray-700 py-4'>
         <td className='text-green-400 text-xs border-l-2 text-center border-gray-600'>انجام شد</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>11:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+         <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  مینا راد  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1</td>
@@ -216,17 +231,142 @@ const dr_admin = () => {
         className=""
         onClick={openModal}
       >
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+         <AiOutlineFolderOpen className='text-green-400  text-xl text-cernter mx-4 cursor-pointer'/>
       </button>
       <ModalPatient isOpen={isModalOpen} onClose={closeModal}>
-        <h2 className="text-xl font-bold mb-4">Modal Title</h2>
-        <p>Modal content goes here...</p>
-        <button
-          className="bg-red-500 text-white px-4 py-2 rounded mt-4"
+        <div className='w-full flex flex-col justify-around '>
+          <p>اطلاعات کلی بیمار</p>
+        <div className='grid grid-cols-2 gap-4 border-t-2 border-gray-500 my-4 pt-4'>
+
+
+
+        <div className='flex justify-between  col-span-2 items-center border py-2 rounded-lg bg-white shadow-xl'>
+             <div className='flex justify-around'>
+             <BsFillMicFill className='text-black text-xl text-cernter mx-4 cursor-pointer'/>
+             <BsFillTelephoneOutboundFill className='text-black text-md text-cernter mx-4 cursor-pointer'/>
+             <FcVideoCall className='text-xl text-cernter mx-4 cursor-pointer'/>
+             </div>
+
+             <p className='text-sm text-center pr-4'> ابزارها</p>
+          </div>
+
+
+
+
+          <div className='flex justify-between items-center w-full px-2 border py-4 rounded-lg bg-white shadow-xl'>
+             
+             
+
+             
+         
+                <button onClick={handleOpen} className='flex justify-between px-2 w-full'>
+                <p className='text-sm text-center '> آزمایشات</p>
+                <GrTest className='text-xl text-cernter mx-4 cursor-pointer'/>
+                </button>
+                <DrawerEx isOpen={isOpen} onClose={handleClose} />
+            
+          </div>
+
+          <div className='flex justify-between items-center border py-4 px-2  rounded-lg bg-white shadow-xl'>
+             <p className='text-sm text-center '> تجویزها </p>
+             <GrDocumentTest className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+          </div>
+
+          <div className='flex justify-between px-2 items-center border py-4 rounded-lg bg-white shadow-xl'>
+             <p className='text-sm text-center '> تاریخچه </p>
+             <GrHistory className='text-xl text-cernter mx-4 cursor-pointer'/>
+          </div>
+
+          <div className='flex justify-between px-2 items-center border py-4 rounded-lg bg-white shadow-xl'>
+             <p className='text-sm text-center '> گزارش ها</p>
+             <FcComboChart className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+          </div>
+
+          
+         
+
+
+
+          <div className='flex justify-between  col-span-2 items-center rounded-lg bg-white shadow-xl'>
+            
+          <Accordion dir='rtl' allowToggle  width="100%" >
+                    <AccordionItem color='blue.300'  >
+                        <h2>
+                        <AccordionButton   >
+                            <Box as="span" flex='1' textAlign='right' fontSize='sm'>
+                            پرداختی های بیمار
+                            </Box>
+                            <span className="relative flex h-3 w-3">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                        </span>
+                        </AccordionButton>
+                        </h2>
+                        <AccordionPanel color='gray.500' pb={4}>
+                        <TableContainer>
+                            <Table size='sm'>
+                              <Thead>
+                                <Tr>
+                                  <Th>ردیف</Th>
+                                  <Th>تاریخ</Th>
+                                  <Th isNumeric>مبلغ</Th>
+                                </Tr>
+                              </Thead>
+                              <Tbody>
+                                <Tr>
+                                  <Td>1</Td>
+                                  <Td>1402/01/23</Td>
+                                  <Td isNumeric>125.000</Td>
+                                </Tr>
+                                <Tr>
+                                  <Td>2</Td>
+                                  <Td>1402/02/23</Td>
+                                  <Td isNumeric>125.000</Td>
+                                </Tr>
+                                <Tr>
+                                  <Td>3</Td>
+                                  <Td>1402/03/23</Td>
+                                  <Td isNumeric>2.400.000</Td>
+                                </Tr>
+                              </Tbody>
+                              <Tfoot>
+                                <Tr>
+                                  <Th>-</Th>
+                                  <Th>-</Th>
+                                  <Th isNumeric>2.650.000</Th>
+                                </Tr>
+                              </Tfoot>
+                            </Table>
+                          </TableContainer>
+                        </AccordionPanel>
+                    </AccordionItem>
+
+ 
+
+
+
+
+
+                </Accordion>
+
+
+
+
+
+
+
+             
+          
+          </div>
+
+        </div>
+        </div>
+        {/* <button
+          className="bg-green-500 text-white px-4 py-2 rounded mt-4"
           onClick={closeModal}
         >
-          Close Modal
-        </button>
+          انجام شد
+        </button> */}
       </ModalPatient>
     </div>
       
@@ -240,7 +380,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>12:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  شیوا مردای  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>3</td>
@@ -252,7 +392,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>12:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>آقای -  سالار محمدی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>4</td>
@@ -266,7 +406,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>13:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>آقای -  توحید حضرتی   </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>5</td>
@@ -280,7 +420,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>13:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  ژاله دلدار  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>6</td>
@@ -295,7 +435,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>14:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>آقای  -  کامران قاسمی   </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>7</td>
@@ -309,7 +449,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>14:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  سوزان فرهمند  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>8</td>
@@ -323,7 +463,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>15:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  زهرا تیموری   </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>9</td>
@@ -337,7 +477,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>15:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  سوزان رادمنش  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>10</td>
@@ -350,7 +490,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>16:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  نرگس محمدزاده  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>11</td>
@@ -363,7 +503,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>16:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>آقای -  کیوان عظیمی   </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>12</td>
@@ -376,7 +516,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>17:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  سودابه مرندی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>13</td>
@@ -389,7 +529,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>17:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  مینا راد  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1</td>
@@ -402,7 +542,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>18:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  ارغوان بانی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>14</td>
@@ -414,7 +554,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>18:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  آیسان رضایی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>15</td>
@@ -427,7 +567,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>19:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  نادیا حاجی زاده راد  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>16</td>
@@ -440,7 +580,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>19:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  نادیا شیرازی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>17</td>
@@ -453,7 +593,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>20:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  زهرا ملک پور  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>18</td>
@@ -466,7 +606,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>20:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  ژیلا محمودی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>19</td>
@@ -478,7 +618,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>21:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  ساناز عسگری  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1</td>
@@ -491,7 +631,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>21:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  مینا محمودی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>20</td>
@@ -504,7 +644,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>22:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>آقا -  رامین محمودی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>21</td>
@@ -517,7 +657,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>22:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>آقا -  سجاد آباجالی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>22</td>
@@ -529,7 +669,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>23:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  مهسا فریدونی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>23</td>
@@ -541,7 +681,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>23:30</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  ژاله راد  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>24</td>
@@ -553,7 +693,7 @@ const dr_admin = () => {
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>1402/03/21</td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>00:00</td>
         <td className=' border-l-2 flex justify-center text-center border-gray-600'>
-         <FcOpenedFolder className='text-white text-xl text-cernter mx-4 cursor-pointer'/>
+        <AiOutlineFolderOpen className='text-gray-500 text-xl text-cernter mx-4 cursor-pointer'/>
         </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>خانم -  شیوا مرادی  </td>
         <td className='text-gray-400 text-xs border-l-2 text-center border-gray-600'>25</td>
