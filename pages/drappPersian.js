@@ -7,10 +7,10 @@ import { BsArrowLeft } from "react-icons/bs";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 import Model from '../components/Modal';
-import { FaPlayCircle } from "react-icons/fa";
+import { FaPlayCircle,FaFacebook ,FaTwitter  } from "react-icons/fa";
 import dynamic from "next/dynamic";
 const Speed = dynamic(() => import('../components/DashChart/Speed'))
-import { Tabs, TabList, TabPanels, Tab, TabPanel, ChakraProvider , Checkbox, extendTheme  } from '@chakra-ui/react';
+import { Tabs, TabList, TabPanels, Tab, TabPanel, ChakraProvider , Checkbox,HStack,Button , extendTheme  } from '@chakra-ui/react';
 const DashChartDrapp = dynamic(() => import('../components/DashChart/DashChartDrapp'))
 const Desend = dynamic(() => import('../components/DashChart/Desend'))
 // const Radial = dynamic(() => import('../components/DashChart/Radial'))
@@ -32,6 +32,7 @@ const theme= extendTheme({fonts})
 const drappPersian = () => {
     const [showModel, setShowModal] = useState(false);
     return (
+<ChakraProvider theme={theme}>
         <div className='w-full h-auto lg:h-full'>
             <Head>
                 <title>Dr App Info</title>
@@ -58,52 +59,80 @@ const drappPersian = () => {
    
    {/* left........................................................... */}
    <div className='flex flex-col justify-start overflow-y-scroll 
-   scrollbar-hide h-screen bg-[#0f1a20f6]   w-4/6  
+   scrollbar-hide h-screen bg-[#020507c9]   w-4/6  
       md:w-full md:h-full '>
 
-      <div className='grid grid-cols-2 gap-6 mt-[10%] mx-[10%]  my-4'>
+      <div className='grid grid-cols-2 lg:grid-cols-1 gap-6 mt-[10%] mx-[10%]  my-4'>
        
-        <div className=' rounded-md bg-[#1E293B] w-full h-full '>
-          <p className='text-white text-center  text-lg sm:px-2 py-8 border-b-2 border-gray-600'>پلتفرم جامع مطب</p>
-          <div className='flex sm:flex-col sm:justify-center justify-around'>
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع مطب</p>
+          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+        <HStack>
         <Link href='/dr_admin' >
-           <p className='text-white text-center hover:text-green-400 py-4'> محیط مدیریت</p>
+              <Button colorScheme='red' variant='outline'  >
+                محیط مدیریت
+              </Button>
         </Link>
-          <p className='text-white text-center py-4'> محیط بیماران</p>
+              <Button colorScheme='green' variant='outline' >
+                محیط بیماران
+              </Button>
+            </HStack>
+        
           </div>
         </div>
 
-        <Link href='/' >
-        <div className=' rounded-md border border-gray-600 bg-[#1E293B] w-full h-full '>
-          <p className='text-white text-center  text-lg sm:px-2 py-8 border-b-2 border-gray-600'>پلتفرم مدیریت کلینیک</p>
-          <div className='flex sm:flex-col sm:justify-center justify-around'>
-            <p className='text-white text-center py-4 '>نرم افزار بیمار</p>
-            <p className='text-white text-center py-4'>نرم افزار مدیریت</p>
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع بیمارستان ها</p>
+          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+        <HStack>
+        <Link href='/dr_admin' >
+              <Button colorScheme='red' variant='outline'  >
+                محیط مدیریت
+              </Button>
+        </Link>
+              <Button colorScheme='green' variant='outline' >
+                محیط بیماران
+              </Button>
+            </HStack>
+        
           </div>
         </div>
+
+
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع کلینیک ها</p>
+          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+        <HStack>
+        <Link href='/dr_admin' >
+              <Button colorScheme='red' variant='outline'  >
+                محیط مدیریت
+              </Button>
         </Link>
-
-
-        <Link href='/' >
-        <div className=' rounded-md border border-gray-600 bg-[#1E293B] w-full h-full '>
-          <p className='text-white text-center  text-lg sm:px-2 py-8 border-b-2 border-gray-600'>پلتفرم مدیریت بیمارستان</p>
-          <div className='flex sm:flex-col sm:justify-center justify-around'>
-            <p className='text-white text-center py-4'>نرم افزار بیمار</p>
-            <p className='text-white text-center py-4'>نرم افزار مدیریت</p>
+              <Button colorScheme='green' variant='outline' >
+                محیط بیماران
+              </Button>
+            </HStack>
+        
           </div>
         </div>
+
+
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع ساختمان پزشکان</p>
+          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+        <HStack>
+        <Link href='/dr_admin' >
+              <Button colorScheme='red' variant='outline'  >
+                محیط مدیریت
+              </Button>
         </Link>
-
-
-        <Link href='/' >
-        <div className=' rounded-md border border-gray-600 bg-[#1E293B] w-full h-full '>
-          <p className='text-white text-center  text-lg sm:px-2 py-8 border-b-2 border-gray-600'>پلتفرم  ساختمان پزشکان</p>
-          <div className='flex sm:flex-col sm:justify-center justify-around'>
-            <p className='text-white text-center py-4'>نرم افزار بیمار</p>
-            <p className='text-white text-center py-4'>نرم افزار مدیریت</p>
+              <Button colorScheme='green' variant='outline' >
+                محیط بیماران
+              </Button>
+            </HStack>
+        
           </div>
         </div>
-        </Link>
 
   
      
@@ -309,7 +338,7 @@ const drappPersian = () => {
     <div className='w-full '>
         <LineChart />
     </div>
-<ChakraProvider theme={theme}>
+
 <Tabs isFitted dir='rtl'  >
                     <TabList color="gray.500">
                         <Tab>  اقتصادی</Tab>
@@ -395,7 +424,7 @@ const drappPersian = () => {
 
                     </TabPanels>
                 </Tabs>
-</ChakraProvider>
+
 </div>
 
 {/* .............................../info4............................ */}
@@ -480,6 +509,7 @@ const drappPersian = () => {
   
   </div>
         </div>
+ </ChakraProvider>
     );
 }
 

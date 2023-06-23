@@ -14,11 +14,11 @@ class Desend extends React.Component {
         this.state = {
         
           series: [{
-            name: 'دوره قبل',
+            name: 'تعداد ویزیت ها',
             data: [100, 40, 28, 70, 42, 80, 50 ]
           }, {
-            name: 'دوره حال',
-            data: [30, 32, 45, 32, 34, 52, 41]
+            name: 'تعداد جراحی ها',
+            data: [10, 4, 5, 13, 7, 15, 6]
           }],
           options: {
             chart: {

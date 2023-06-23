@@ -76,7 +76,7 @@ class LineChartLike extends React.Component {
 
 
   <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350}  />
 </div>
 
 

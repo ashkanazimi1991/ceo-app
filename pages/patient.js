@@ -67,49 +67,41 @@ const patient = () => {
   return (
     <div className='min-h-screen flex flex-col bg-[#072133]'>
        <ChakraProvider theme={theme}> 
-{/* Header............................. */}
-<div className='z-20 px-2 fixed w-full bg-gray-00 shadow-2xl top-0 '> 
-<div className='flex justify-between items-center'>
-<Link href='/persian' >
-    <div className='flex items-center'>
-    <Image  src='/images/2.png'  alt="logo" width='50' height='50'
-                 className=" max-h-16 w-[100%] py-2 object-contain "/>
-    <h3 className='text-gray-400 text-xs pl-2  whitespace-nowrap'>CEO Developer <br></br> Community</h3>
-    </div>
-    </Link>
+        {/* Header............................. */}
+        <div className='z-20 px-2 fixed w-full bg-gray-00 shadow-2xl top-0 '> 
+        <div className='flex justify-between items-center'>
+        <Link href='/persian' >
+            <div className='flex items-center'>
+            <Image  src='/images/2.png'  alt="logo" width='50' height='50'
+                        className=" max-h-16 w-[100%] py-2 object-contain "/>
+            <h3 className='text-gray-400 text-xs pl-2  whitespace-nowrap'>CEO Developer <br></br> Community</h3>
+            </div>
+            </Link>
 
 
-   <div className='flex items-center'>
-   <Link href='/contactUsPersian' >
-    <p className='py-2 my-2 text-white hover:text-green-400 cursor-pointer text-xs border-dashed border-2 border-sky-500 rounded-xl  px-2'>ثبت سفارش</p>
-   </Link>
-   
-   
-   <div>
-         
-          <button onClick={handleOpen}>
-          <RiMenuUnfoldFill className='text-white text-3xl mx-4'/>
-          </button>
-          <Drawer isOpen={isOpen} onClose={handleClose} />
-   </div>
-{/* Header............................................... */}
+          <div className='flex items-center'>
+          <Link href='/contactUsPersian' >
+            <p className='py-2 my-2 text-white hover:text-green-400 cursor-pointer text-xs border-dashed border-2 border-sky-500 rounded-xl  px-2'>ثبت سفارش</p>
+          </Link>
+          
+          
+          <div>
+                
+                  <button onClick={handleOpen}>
+                  <RiMenuUnfoldFill className='text-white text-3xl mx-4'/>
+                  </button>
+                  <Drawer isOpen={isOpen} onClose={handleClose} />
+          </div>
+
+            </div> 
+            
 
 
+        </div>
+        </div>
 
+        {/* Header............................................... */}
 
-
-   
-   
-    
-    </div> 
-    
-
-    
-
-</div>
-</div>
-
-{/* Header/................................................... */}
 
 {/* Nav............................. */}
 <div className='fixed right-0 top-1/3 px-2 py-4 bg-gray-700 shadow-xl rounded-l-lg'>
@@ -131,12 +123,13 @@ const patient = () => {
     </Tooltip>
     </Link>
 
-
+    <Link href='/dr_report' >
     <Tooltip label='گزارش ها' placement='left' fontSize='md'>
       <div className='border-2 p-2 rounded-md cursor-pointer border-gray-600'>
         <BsFillBarChartFill className='text-white text-md  '/> 
       </div>
     </Tooltip>
+    </Link>
 
 
     <Tooltip label='حسابداری' placement='left' fontSize='md'>
@@ -175,13 +168,13 @@ const patient = () => {
   <div className='h-2/3 mt-24 w-full '>
 
 <div className='flex md:flex-col justify-around bg-[#00000096]  mx-[5%] my-6 py-4 px-2 rounded-md shadow-2xl'>
-  <div className='flex flex-col justify-center rounded-md items-center  px-4  '>
-    <p className='text-white text-center   border-gray-400 text-sm py-4 px-2'>تعداد کل بیمارها</p>
+  <div className='flex justify-center rounded-md items-center  px-4  '>
     <p className='text-green-500 text-center  text-2xl border-gray-400 text-md '> 986</p>
+    <p className='text-white text-center   border-gray-400 text-sm py-4 px-2'>:تعداد کل بیمارها</p>
   </div>
   <div >
     <p className='text-white text-center   border-gray-400 text-sm py-4 px-2'> جستجو با شما پرونده</p>
-  <NumberInput defaultValue={15} variant='flushed'  color='gray.500'>
+  <NumberInput defaultValue={15} variant='flushed'  color='gray.500' size='xs'>
   <NumberInputField />
   <NumberInputStepper>
     <NumberIncrementStepper />
@@ -190,9 +183,9 @@ const patient = () => {
 </NumberInput>
   </div>
 
-  <div >
+  <div clssName='flex' >
   <p className='text-white text-center   border-gray-400 text-sm py-4 px-2'> جستجو با  نام بیمار</p>
-    <Input variant='flushed' color='gray.500' placeholder='تایپ کنید' dir='rtl' />
+    <Input variant='flushed' color='gray.500' size='xs' placeholder='تایپ کنید' dir='rtl' />
   </div>
 
 
@@ -789,6 +782,17 @@ const patient = () => {
 
 </div>
 {/* table/................. */}
+
+<div className='flex justify-center items-center py-4 w-full'>
+<div className='grid grid-cols-5 gap-2 '>
+  <p className='w-4 h-4 rounded-full m-auto border border-gray-400 text-gray-500 text-center bg-green-400'>1</p>
+  <p className='w-4 h-4 rounded-full  text-gray-500 text-center '>2</p>
+  <p className='w-4 h-4 rounded-full  text-gray-500 text-center '>3</p>
+  <p className='w-4 h-4 rounded-full  text-gray-500 text-center '>4</p>
+  <p className='w-4 h-4 rounded-full  text-gray-500 text-center '>5</p>
+
+</div>
+</div>
 
 
 

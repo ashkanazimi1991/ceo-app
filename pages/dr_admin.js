@@ -123,46 +123,51 @@ const dr_admin = () => {
 <div className='fixed right-0 top-1/3 px-2 py-4 bg-gray-700 shadow-xl rounded-l-lg'>
 <div className='flex flex-col justify-center  space-y-4 rounded-xl  items-center  '>
     
+<Link href='/dr_admin' >
     <Tooltip label='داشبورد' placement='left' fontSize='md'>
-      <div className=' rounded-md bg-cyan-800  shadow-2xl'>
-        <MdOutlineDashboardCustomize className='text-white text-md m-2  hover:text-emerald-500   '/> 
+      <div className=' border-2 p-2  rounded-md cursor-pointer bg-cyan-800 '>
+        <MdOutlineDashboardCustomize className='text-white text-md   hover:text-emerald-500   '/> 
       </div>
     </Tooltip>
+</Link>
    
     <Link href='/patient' >
     <Tooltip label='بیماران' placement='left' fontSize='md'>
-      <div className='border-2 p-2 rounded-md cursor-pointer border-gray-600'>
+      <div className=' rounded-md p-2 border-2 border-gray-600 hover:border-green-400 shadow-2xl'>
         <BsFillPeopleFill className='text-white text-md  '/> 
       </div>
     </Tooltip>
     </Link>
 
-
-    <Tooltip label='گزارشات' placement='left' fontSize='md'>
-      <div className='border-2 p-2 rounded-md cursor-pointer border-gray-600'>
+    <Link href='/dr_report' >
+    <Tooltip label='گزارش ها' placement='left' fontSize='md'>
+      <div className=' p-2 rounded-md cursor-pointer border-2  shadow-2xl hover:border-green-400 border-gray-600'>
         <BsFillBarChartFill className='text-white text-md  '/> 
       </div>
     </Tooltip>
+    </Link>
 
-
+    <Link href='/dr_finance' >
     <Tooltip label='حسابداری' placement='left' fontSize='md'>
-      <div className='border-2 p-2 rounded-md cursor-pointer border-gray-600'>
+      <div className=' p-2 rounded-md border-2  cursor-pointer hover:border-green-400 border-gray-600'>
         <FaYelp className='text-white text-md  '/> 
       </div>
     </Tooltip>
+    </Link>
 
 
 
 
-
+    <Link href='/dr_team' >
     <Tooltip label='همکاران' placement='left' fontSize='md'>
-      <div className='border-2 p-2 rounded-md cursor-pointer border-gray-600'>
+      <div className=' p-2 rounded-md border-2 cursor-pointer hover:border-green-400 border-gray-600'>
         <SiHandshake className='text-white text-md  '/> 
       </div>
     </Tooltip>
+    </Link>
 
     <Tooltip label='تنظیمات' placement='left' fontSize='md' >
-      <div className='border-2 p-2 rounded-md cursor-pointer border-gray-600'>
+      <div className=' p-2 rounded-md cursor-pointer border hover:border-green-400 border-gray-600'>
         <BsGearFill className='text-white text-md  '/> 
       </div>
     </Tooltip>
