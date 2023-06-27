@@ -4,10 +4,10 @@ import Image from 'next/image';
 
 import Link from 'next/link';
 import { BsArrowLeft } from "react-icons/bs";
-import { AiOutlineInfoCircle } from "react-icons/ai";
+import { FcComboChart } from "react-icons/fc";
 
 import Model from '../components/Modal';
-import { FaPlayCircle,FaFacebook ,FaTwitter  } from "react-icons/fa";
+import { FaPlayCircle,FaUsers ,FaTwitter  } from "react-icons/fa";
 import dynamic from "next/dynamic";
 const Speed = dynamic(() => import('../components/DashChart/Speed'))
 import { Tabs, TabList, TabPanels, Tab, TabPanel, ChakraProvider , Checkbox,HStack,Button , extendTheme  } from '@chakra-ui/react';
@@ -62,80 +62,100 @@ const drappPersian = () => {
    scrollbar-hide h-screen bg-[#020507c9]   w-4/6  
       md:w-full md:h-full '>
 
-      <div className='grid grid-cols-2 lg:grid-cols-1 gap-6 mt-[10%] mx-[10%]  my-4'>
+      <div className='grid grid-cols-2 lg:grid-cols-1 gap-6 mt-[10%] mx-[10%] md:mx-4  my-4'>
        
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 whitespace-nowrap border-gray-700'>پلتفرم جامع کلینیک</p>
+          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr_front' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap '>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
+        
+          </div>
+        </div>
+
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
           <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع مطب</p>
           <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
-        <HStack>
-        <Link href='/dr_admin' >
-              <Button colorScheme='red' variant='outline'  >
-                محیط مدیریت
-              </Button>
-        </Link>
-              <Button colorScheme='green' variant='outline' >
-                محیط بیماران
-              </Button>
-            </HStack>
+          <div className="flex justify-around space-x-2">
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr_front' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
         
           </div>
         </div>
-
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع بیمارستان ها</p>
-          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
-        <HStack>
-        <Link href='/dr_admin' >
-              <Button colorScheme='red' variant='outline'  >
-                محیط مدیریت
-              </Button>
-        </Link>
-              <Button colorScheme='green' variant='outline' >
-                محیط بیماران
-              </Button>
-            </HStack>
-        
-          </div>
-        </div>
-
-
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع کلینیک ها</p>
-          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
-        <HStack>
-        <Link href='/dr_admin' >
-              <Button colorScheme='red' variant='outline'  >
-                محیط مدیریت
-              </Button>
-        </Link>
-              <Button colorScheme='green' variant='outline' >
-                محیط بیماران
-              </Button>
-            </HStack>
-        
-          </div>
-        </div>
-
-
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع ساختمان پزشکان</p>
-          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
-        <HStack>
-        <Link href='/dr_admin' >
-              <Button colorScheme='red' variant='outline'  >
-                محیط مدیریت
-              </Button>
-        </Link>
-              <Button colorScheme='green' variant='outline' >
-                محیط بیماران
-              </Button>
-            </HStack>
-        
-          </div>
-        </div>
-
   
-     
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 whitespace-nowrap py-4 border-b-2 border-gray-700'>پلتفرم جامع بیمارستان </p>
+          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap '> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr_front' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap '>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
+        
+          </div>
+        </div>
+
+
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 whitespace-nowrap border-gray-700'>پلتفرم جامع ساختمان پزشکان</p>
+          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr_front' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap '>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
+        
+          </div>
+        </div>
    
       </div>
 

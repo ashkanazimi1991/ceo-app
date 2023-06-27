@@ -167,7 +167,7 @@ const patient = () => {
 
   <div className='h-2/3 mt-24 w-full '>
 
-<div className='flex md:flex-col justify-around bg-[#00000096]  mx-[5%] my-6 py-4 px-2 rounded-md shadow-2xl'>
+<div className='flex md:flex-col justify-around bg-gray-800  mx-[5%] my-6 py-4 px-2 rounded-md shadow-2xl'>
   <div className='flex justify-center rounded-md items-center  px-4  '>
     <p className='text-green-500 text-center  text-2xl border-gray-400 text-md '> 986</p>
     <p className='text-white text-center   border-gray-400 text-sm py-4 px-2'>:تعداد کل بیمارها</p>

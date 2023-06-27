@@ -1,153 +1,136 @@
+
 import React, { useRef, useState } from "react";
+import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/scrollbar";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Image from "next/image";
+import "swiper/css/effect-cards";
 
 import "../../styles/Home.module.css";
+// import "./styles.css";
 
 // import required modules
-import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper";
+import { EffectCards } from "swiper";
 
 export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={1}
-        centeredSlides={false}
-        slidesPerGroupSkip={1}
+        effect={"cards"}
         grabCursor={true}
-        keyboard={{
-          enabled: true,
-        }}
-        breakpoints={{
-          769: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-          },
-        }}
-        scrollbar={true}
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Keyboard, Scrollbar, Navigation, Pagination]}
+        modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="flex justify-around bg-green-200 py-[5%] my-auto">
-            <div className="flex flex-col items-center bg-red-400 m-auto">
-            <h2>Title</h2>
-            <p>sdfsdfsfsdfsfsfsfsfsfsdfsdfsfsf</p>
+        <SwiperSlide className="shadow-2xl ">
+          <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
+            <div className="flex justify-around items-center flex-row-reverse">
+            <Image src='/images/ashkan2.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <div className="flex flex-col">
+            <p className="px-2 text-right">اشکان عظیمی</p>
+            <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
-
-            <div className="w-1/2 px-4">
-            <Image  src='/images/ux.png'  alt="logo" width='500' height='500'
-                 className=" w-[100%] p-2  object-contain "/>
             </div>
-          </div>
-        </SwiperSlide>
-      
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
 
-
-        <SwiperSlide>
-          <div className="flex justify-around bg-green-200 py-[5%] my-auto">
-            <div className="flex flex-col items-center bg-red-400 m-auto">
-            <h2>Title</h2>
-            <p>sdfsdfsfsdfsfsfsfsfsfsdfsdfsfsf</p>
-            </div>
-
-            <div className="w-1/2 px-4">
-            <Image  src='/images/ux.png'  alt="logo" width='500' height='500'
-                 className=" w-[100%] p-2  object-contain "/>
-            </div>
           </div>
         </SwiperSlide>
 
-
-        <SwiperSlide>
-          <div className="flex justify-around bg-green-200 py-[5%] my-auto">
-            <div className="flex flex-col items-center bg-red-400 m-auto">
-            <h2>Title</h2>
-            <p>sdfsdfsfsdfsfsfsfsfsfsdfsdfsfsf</p>
+        <SwiperSlide className="shadow-2xl ">
+          <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
+            <div className="flex justify-around items-center flex-row-reverse">
+            <Image src='/images/bita.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <div className="flex flex-col">
+            <p className="px-2 text-right">بیتا</p>
+            <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
-
-            <div className="w-1/2 px-4">
-            <Image  src='/images/ux.png'  alt="logo" width='500' height='500'
-                 className=" w-[100%] p-2  object-contain "/>
             </div>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
+
+          </div>
+        </SwiperSlide>
+       
+        <SwiperSlide className="shadow-2xl ">
+          <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
+            <div className="flex justify-around items-center flex-row-reverse">
+            <Image src='/images/amir.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <div className="flex flex-col">
+            <p className="px-2 text-right">امیر</p>
+            <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
+            </div>
+            </div>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
+
           </div>
         </SwiperSlide>
 
-
-        <SwiperSlide>
-          <div className="flex justify-around bg-green-200 py-[5%] my-auto">
-            <div className="flex flex-col items-center bg-red-400 m-auto">
-            <h2>Title</h2>
-            <p>sdfsdfsfsdfsfsfsfsfsfsdfsdfsfsf</p>
+        <SwiperSlide className="shadow-2xl ">
+          <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
+            <div className="flex justify-around items-center flex-row-reverse">
+            <Image src='/images/p1.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <div className="flex flex-col">
+            <p className="px-2 text-right"> سالار</p>
+            <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
-
-            <div className="w-1/2 px-4">
-            <Image  src='/images/ux.png'  alt="logo" width='500' height='500'
-                 className=" w-[100%] p-2  object-contain "/>
             </div>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
+
           </div>
         </SwiperSlide>
 
+ 
 
-
- <SwiperSlide>
-          <div className="flex justify-around bg-green-200 py-[5%] my-auto">
-            <div className="flex flex-col items-center bg-red-400 m-auto">
-            <h2>Title</h2>
-            <p>sdfsdfsfsdfsfsfsfsfsfsdfsdfsfsf</p>
+        <SwiperSlide className="shadow-2xl ">
+          <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
+            <div className="flex justify-around items-center flex-row-reverse">
+            <Image src='/images/sajjad.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <div className="flex flex-col">
+            <p className="px-2 text-right"> سجاد</p>
+            <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
-
-            <div className="w-1/2 px-4">
-            <Image  src='/images/ux.png'  alt="logo" width='500' height='500'
-                 className=" w-[100%] p-2  object-contain "/>
             </div>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
+
           </div>
         </SwiperSlide>
 
-
-
-
-        <SwiperSlide>
-          <div className="flex justify-around bg-green-200 py-[5%] my-auto">
-            <div className="flex flex-col items-center bg-red-400 m-auto">
-            <h2>Title</h2>
-            <p>sdfsdfsfsdfsfsfsfsfsfsdfsdfsfsf</p>
+        <SwiperSlide className="shadow-2xl ">
+          <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
+            <div className="flex justify-around items-center flex-row-reverse">
+            <Image src='/images/sara.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <div className="flex flex-col">
+            <p className="px-2 text-right">سارا </p>
+            <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
-
-            <div className="w-1/2 px-4">
-            <Image  src='/images/ux.png'  alt="logo" width='500' height='500'
-                 className=" w-[100%] p-2  object-contain "/>
             </div>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
+
           </div>
         </SwiperSlide>
 
-
-        <SwiperSlide>
-          <div className="flex justify-around bg-green-200 py-[5%] my-auto">
-            <div className="flex flex-col items-center bg-red-400 m-auto">
-            <h2>Title</h2>
-            <p>sdfsdfsfsdfsfsfsfsfsfsdfsdfsfsf</p>
+        <SwiperSlide className="shadow-2xl ">
+          <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
+            <div className="flex justify-around items-center flex-row-reverse">
+            <Image src='/images/p1.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <div className="flex flex-col">
+            <p className="px-2 text-right">اشکان عظیمی</p>
+            <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
-
-            <div className="w-1/2 px-4">
-            <Image  src='/images/ux.png'  alt="logo" width='500' height='500'
-                 className=" w-[100%] p-2  object-contain "/>
             </div>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
+
           </div>
         </SwiperSlide>
 
-        
+   
       </Swiper>
     </>
   );
