@@ -23,8 +23,9 @@ const psychology = () => {
       <div className='fixed z-10 bg-blue-200  w-full'>
         <div className=' flex items-center    justify-between  '>
         <Link href='/drappPersian'>
-            <div>
-            <Image src='/images/barsad.png' width='100' height='200' className=' scale-100 hover:scale-110 rounded-xl object-contain'/>
+            <div className='flex justify-center items-center'>
+            <Image src='/images/barsad.png' width='100' height='200' alt='psychology' className=' scale-100 hover:scale-110 pl-4 rounded-xl object-contain'/>
+            <p className='text-gary-400 sm:hidden tex-xs leading-4'>BARSAD<br></br>Psychology</p>
             </div>
         </Link>
          <div className=' flex md:hidden '>
@@ -98,7 +99,7 @@ const psychology = () => {
 
         </div>
         <div className='w-1/2   shadow-2xl   md:w-full'>
-        <Image src='/images/s2.jpg' width='700' height='700' className='w-full h-full transition delay-150 duration-300 ease-in-out scale-100 hover:scale-110 rounded-xl object-cover'/>
+        <Image src='/images/s2.jpg' width='700' height='700' alt='onlineceo' className='w-full h-full transition delay-150 duration-300 ease-in-out scale-100 hover:scale-110 rounded-xl object-cover'/>
         </div>
         </div>
     </div>

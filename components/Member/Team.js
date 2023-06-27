@@ -180,7 +180,7 @@ const Team = () => {
                          group-hover:text-white">Sara Kian</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
-                         group-hover:text-gray-300">UI  Designer </h2>
+                         group-hover:text-gray-300">UI  Designer - FrontEnd Developer </h2>
                         
                         {/* <div className="flex mt-3 -mx-2">
                             <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>

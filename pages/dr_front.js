@@ -7,30 +7,17 @@ import { BsArrowRightShort, BsFillTelephoneFill,BsCameraVideoFill, BsFillChatLef
 import Faq from '../components/Dr_admin/Faq';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const dr_front = () => {
   return (
     <div>
     <Head>
       <title>
-        کلینیک روانشناسی
+        نرم افزار کلینیک روانشناسی
       </title>
       <meta name="description" content='نرم افزارهای مدیریت روانشناسان'/>
-      <meta name="theme-color" content='#e7e9eb'/>
-      <Link ref="icon" href="/images/f8.jpg"/>
+      <meta name="theme-color" content="#142028"/>
+                <link rel="icon" href="/images/2.png" />
+                <link rel='manifest' href='/manifest.json' />
       
     </Head>
        <Hero/> 
@@ -98,7 +85,7 @@ const dr_front = () => {
         
        
         <div className='relative inline-block  max-h-96 transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100  ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/p1.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/p1.jpg' width='400' height='600' alt='نرم افزار کلینیک'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   مشاوره خانواده
                      {/* <div className='group w-full'>
@@ -110,7 +97,7 @@ const dr_front = () => {
 
 
             <div className='relative max-h-96  inline-block transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100 ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/f2.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/f2.jpg' width='400' height='600' alt='نرم افزار کلینیک'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   مشاوره ازدواج
                      {/* <div className='group w-full'>
@@ -120,7 +107,7 @@ const dr_front = () => {
             </div>
 
             <div className='relative max-h-96  inline-block transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100 ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/f3.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/f3.jpg' width='400' height='600' alt='نرم افزار کلینیک'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   زوج درمانی
                      {/* <div className='group w-full'>
@@ -130,7 +117,7 @@ const dr_front = () => {
             </div>
 
             <div className='relative max-h-96  inline-block transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100 ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/f7.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/f7.jpg' width='400' height='600' alt='نرم افزار کلینیک'   className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   مشاوره فردی
                                        {/* <div className='group w-full'>
@@ -140,7 +127,7 @@ const dr_front = () => {
             </div>
 
             <div className='relative max-h-96  inline-block transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100 ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/f5.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/f5.jpg' width='400' height='600' alt='نرم افزار کلینیک'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   روانپزشک
                        {/* <div className='group w-full'>
@@ -150,7 +137,7 @@ const dr_front = () => {
             </div>
 
             <div className='relative max-h-96  inline-block transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100 ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/f8.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/f8.jpg' width='400' height='600' alt='نرم افزار کلینیک'   className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   مشاوره ارتباطی
                        {/* <div className='group w-full'>
@@ -160,7 +147,7 @@ const dr_front = () => {
             </div>
 
             <div className='relative max-h-96  inline-block transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100 ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/f8.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/f8.jpg' width='400' height='600'  alt='نرم افزار کلینیک' className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   مشاوره ارتباطی
                        {/* <div className='group w-full'>
@@ -170,7 +157,7 @@ const dr_front = () => {
             </div>
 
             <div className='relative max-h-96  inline-block transition delay-150 border-4 duration-300 brightness-50 hover:brightness-100 ease-in-out rounded-xl scale-100 hover:scale-125 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/f8.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/f8.jpg' width='400' height='600'  alt='نرم افزار کلینیک'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   مشاوره ارتباطی
                        {/* <div className='group w-full'>
@@ -196,10 +183,10 @@ const dr_front = () => {
     </div>
 
     <div className=' flex md:flex-col w-full px-[12%] justify-center items-center space-x-2  '>
-    <div className=' flex w-1/2 md:w-full '>
+    <div className=' flex w-1/2 md:w-full  justify-center items-center '>
 
     <div className='relative inline-block transition delay-150 border-4 m-6 duration-300  ease-in-out rounded-xl scale-100 hover:scale-110 shadow-2xl z-0 hover:z-10'>
-               <Image src='/images/psy10.jpg' width='400' height='600'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
+               <Image src='/images/psy10.jpg' width='400' height='600' alt='نرم افزار کلینیک'  className='rounded-xl   w-full h-full drop-shadow-2xl  object-cover'/>
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 flex justify-around items-center 
                  -translate-y-1/4 bg-gray-400 text-balck hover:text-green-200 whitespace-nowrap  text-xs px-4 py-2  rounded'>
                 همیشه در ارتباط
@@ -241,49 +228,49 @@ const dr_front = () => {
 
     <div className=' grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-center px-[15%] md:px-4'>
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr20.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr20.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>
    
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr21.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr21.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr23.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr23.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr21.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr21.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr23.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr23.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr20.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr20.jpg' width='200' height='400' alt='نرم افزار کلینیک'   className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr21.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr21.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>
       
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/dr23.jpg' width='200' height='400'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/dr23.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'> نام روانشناس</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300'>بیوگرافی </p>  
         </div>

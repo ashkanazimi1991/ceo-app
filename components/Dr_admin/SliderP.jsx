@@ -56,7 +56,7 @@ export default function App() {
         <SwiperSlide className="shadow-2xl ">
           <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
             <div className="flex justify-around items-center flex-row-reverse">
-            <Image src='/images/amir.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <Image src='/images/amir.jpg' width='100' height='100' alt='نرم افزار کلینیک'  className='rounded-xl   w-18 h-20  object-cover'/>
             <div className="flex flex-col">
             <p className="px-2 text-right">امیر</p>
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
@@ -71,7 +71,7 @@ export default function App() {
         <SwiperSlide className="shadow-2xl ">
           <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
             <div className="flex justify-around items-center flex-row-reverse">
-            <Image src='/images/p1.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <Image src='/images/p1.jpg' width='100' height='100' alt='نرم افزار کلینیک'   className='rounded-xl   w-18 h-20  object-cover'/>
             <div className="flex flex-col">
             <p className="px-2 text-right"> سالار</p>
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
@@ -88,7 +88,7 @@ export default function App() {
         <SwiperSlide className="shadow-2xl ">
           <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
             <div className="flex justify-around items-center flex-row-reverse">
-            <Image src='/images/sajjad.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <Image src='/images/sajjad.jpg' width='100' height='100' alt='نرم افزار کلینیک'  className='rounded-xl   w-18 h-20  object-cover'/>
             <div className="flex flex-col">
             <p className="px-2 text-right"> سجاد</p>
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
@@ -103,7 +103,7 @@ export default function App() {
         <SwiperSlide className="shadow-2xl ">
           <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
             <div className="flex justify-around items-center flex-row-reverse">
-            <Image src='/images/sara.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <Image src='/images/sara.jpg' width='100' height='100' alt='نرم افزار کلینیک'   className='rounded-xl   w-18 h-20  object-cover'/>
             <div className="flex flex-col">
             <p className="px-2 text-right">سارا </p>
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
@@ -118,7 +118,7 @@ export default function App() {
         <SwiperSlide className="shadow-2xl ">
           <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
             <div className="flex justify-around items-center flex-row-reverse">
-            <Image src='/images/p1.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>
+            <Image src='/images/p1.jpg' width='100' height='100' alt='نرم افزار کلینیک'  className='rounded-xl   w-18 h-20  object-cover'/>
             <div className="flex flex-col">
             <p className="px-2 text-right">اشکان عظیمی</p>
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
