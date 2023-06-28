@@ -58,7 +58,7 @@ const dr_finance = () => {
         {/* Header............................. */}
             <div className='z-20 px-2 fixed w-full bg-gray-800 shadow-2xl top-0 '> 
             <div className='flex justify-between items-center'>
-            <Link href='/persian' >
+            <Link href='/drappPersian' >
                 <div className='flex items-center'>
                 <Image  src='/images/2.png'  alt="logo" width='50' height='50'
                             className=" max-h-16 w-[100%] py-2 object-contain "/>
