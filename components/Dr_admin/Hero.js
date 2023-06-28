@@ -84,7 +84,7 @@ const psychology = () => {
 
       </div>
         {/* /menu */}
-        <div className='flex flex-row-reverse mx-[10%] lg:mx-[5%] md:mx-[2%] md:flex-col pt-20 p-10'>
+        <div className='flex flex-row-reverse mx-[10%] lg:mx-[5%] md:mx-[2%] md:flex-col py-40 p-10'>
         <div className=' w-1/2 flex flex-col justify-center items-center  px-[2%] transition delay-150 duration-300 ease-in-out scale-100 hover:scale-110 md:w-full '>
           <p className=' py-2 text-center w-full bg-blue-100 shadow-xl rounded-lg text-purple-500 '>
             کلینیک روانشناسی سرشت برساد
