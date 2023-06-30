@@ -23,14 +23,14 @@ const dr_front = () => {
        <Hero/> 
 
   <div>
-    <div className='flex flex-col justify-center'>
+    <div className='flex bg-gray-100 flex-col justify-center'>
       <p className='   text-lg bg-blue-100 md:text-sm px-[22%] md:px-[4%] py-16 text-center'>
         سرشت برساد با تجربه کاری و اکادمیک خود  در زمینه روان شناسی در بهمود مراجعه کنندگان زیادی سهیم بوده است
       </p>
 
 
 {/* number */}
-      <div className='flex md:flex-col md:space-y-6  justify-center my-10'>
+      <div className='flex md:flex-col md:space-y-6 justify-center my-10'>
 
       <div className='flex flex-col md:flex-row px-[4%] border-x-2 justify-around items-center w-full'>
           <div className='flex justify-center items-center '>
@@ -73,14 +73,14 @@ const dr_front = () => {
 
 
     </div>
-    <div className=' flex-col py-4'>
+    <div className=' flex-col bg-gray-200  py-4'>
     <Link href='/index' className=' flex justify-center'>
                   <p className='  bg-green-100 text-green-600 text-sm rounded-2xl px-4 py-2'> زمینه های روانشناسی</p>
     </Link>
        
     </div>
     
-    <div className=' flex justify-center items-center'>
+    <div className=' flex justify-center bg-gray-200 items-center'>
       <div className=' grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-4 justify-center px-[15%]'>
         
        
@@ -170,7 +170,7 @@ const dr_front = () => {
         </div> 
 
     </div>
-    <div>
+    <div className='bg-gray-200'>
       
       <div className=' pt-10'>
       <Link href='/' className=' flex justify-center'>

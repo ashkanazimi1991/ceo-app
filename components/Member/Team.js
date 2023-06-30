@@ -47,7 +47,7 @@ const Team = () => {
                               <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                            </Link>  
 
-                           <Link href='https://ashkanazimi.info' target='_blank'  aria-label='telegram'>
+                           <Link href='/ceo_cv' target='_blank'  aria-label='telegram'>
                               <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                            </Link>  
                         </div>

@@ -19,6 +19,14 @@ const psychology = () => {
     
     return (
       <div  className= ' '>
+            <Image
+             className=" fixed bottm-0 -z-20  w-full md:h-full  object-cover brightness-50
+              opacity-100 "
+             src="/images/dr_bg.jpg"
+             width='1200'
+             height='800'
+             alt="CEO"
+            />
       {/* menu */}
       <div className='fixed z-10 bg-blue-200  w-full'>
         <div className=' flex items-center    justify-between  '>
@@ -31,25 +39,25 @@ const psychology = () => {
          <div className=' flex md:hidden '>
             <div>
                 <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-xs '>صفحه اصلی</p>
+                    <p className=' text-gray-700 p-2 text-sm '>صفحه اصلی</p>
 
                 </Link>
             </div>
             <div>
                 <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-xs '>تست ها</p>
+                    <p className=' text-gray-700 p-2 text-sm '>تست ها</p>
 
                 </Link>
             </div>
             <div>
                 <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-xs'>مقالات</p>
+                    <p className=' text-gray-700 p-2 text-sm'>مقالات</p>
 
                 </Link>
             </div>
             <div>
                 <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-xs'>درباره ما</p>
+                    <p className=' text-gray-700 p-2 text-sm'>درباره ما</p>
 
                 </Link>
             </div>
@@ -84,16 +92,16 @@ const psychology = () => {
 
       </div>
         {/* /menu */}
-        <div className='flex flex-row-reverse mx-[10%] lg:mx-[5%] md:mx-[2%] md:flex-col py-40 p-10'>
-        <div className=' w-1/2 flex flex-col justify-center items-center  px-[2%] transition delay-150 duration-300 ease-in-out scale-100 hover:scale-110 md:w-full '>
+        <div className='flex flex-row-reverse px-[10%] lg:px-[5%]  md:px-[2%] md:flex-col py-40 p-10'>
+        <div className=' w-1/2 flex flex-col justify-center items-center  px-[2%]  md:w-full '>
           <p className=' py-2 text-center w-full bg-blue-100 shadow-xl rounded-lg text-purple-500 '>
             کلینیک روانشناسی سرشت برساد
           </p>
-          <p className='text-center text-lg py-4'>
+          <p className='text-center text-blue-300 text-lg py-4'>
             مشاور سلامت ذهنی شما
           </p>
         
-          <p className=' text-center text-xs text-gray-400 leading-8 pb-4'>
+          <p className=' text-center text-xs text-gray-200 leading-8 pb-4'>
           کلینیک مشاوره روانشناسی سرشت برساد ارائه دهنده خدمات مشاوره روانشناسی حضوری و مجازی با بیش از100 متخصص در حوزه های مختلف روانشناسی آماده ارائه خدمات مشاوره تلفنی و حضوری به مشتریان می باشد
           </p>
 
