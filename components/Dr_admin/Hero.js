@@ -106,8 +106,8 @@ const psychology = () => {
           </p>
 
         </div>
-        <div className='w-1/2   shadow-2xl   md:w-full'>
-        <Image src='/images/s2.jpg' width='700' height='700' alt='onlineceo' className='w-full h-full transition delay-150 duration-300 ease-in-out scale-100 hover:scale-110 rounded-xl object-cover'/>
+        <div className='w-1/2    md:w-full'>
+        <Image src='/images/s2.jpg' width='700' height='700' alt='onlineceo' className='w-full h-full transition delay-150 duration-300 ease-in-out scale-75 hover:scale-100 rounded-xl object-cover'/>
         </div>
         </div>
     </div>

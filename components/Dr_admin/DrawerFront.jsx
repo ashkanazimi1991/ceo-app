@@ -60,7 +60,7 @@ const DrawerFront = ({ isOpen, onClose }) => {
                   className=" h-3/4 rounded-t-xl w-1/3 drop-shadow-xl  object-contain "/> */}
        
                 <div className='flex justify-center  items-center'>
-                 <h3 className="text-gray-800 text-center w-full px-4 py-2"> صفحه اصلی</h3>
+                 <h3 className="text-gray-800 text-center w-full px-4 py-2">   اصلی</h3>
                  <MdOutlineDashboardCustomize className="text-4xl mr-4 text-gray-800" />
                 </div>
 

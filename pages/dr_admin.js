@@ -120,7 +120,7 @@ const dr_admin = () => {
 </div>
 {/* .........Header.../ */}
 {/* nav................. */}
-<div className='fixed right-0 top-1/3 px-2 py-4 bg-gray-700 shadow-xl rounded-l-lg'>
+<div className='fixed right-0 top-1/3 px-2 py-4 z-50 bg-gray-700 shadow-xl rounded-l-lg'>
 <div className='flex flex-col justify-center  space-y-4 rounded-xl  items-center  '>
     
 <Link href='/dr_admin' >
