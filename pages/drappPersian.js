@@ -62,44 +62,26 @@ const drappPersian = () => {
    scrollbar-hide h-screen bg-[#020507c9]   w-4/6  
       md:w-full md:h-full '>
 
-      <div className='grid grid-cols-2 lg:grid-cols-1 gap-6 mt-[10%] mx-[10%] md:mx-4  my-4'>
+      <div className='grid grid-cols-2 xl:grid-cols-1 gap-6 mt-[10%] mx-[10%] md:mx-4  my-4'>
        
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 whitespace-nowrap border-gray-700'>پلتفرم جامع کلینیک</p>
-          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
-          <div className="flex justify-around space-x-2">
-          <Link href='/dr_admin' >
-           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
-            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
-            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
-           </div>
-           </Link>
-
-           <Link href='/dr_front' >
-           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
-            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap '>محیط مراجعه کنندگان</p>
-            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
-           </div>
-          </Link>
-
-        </div>
         
-          </div>
-        </div>
 
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
           <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع مطب</p>
-          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
+         
           <Link href='/dr_admin' >
-           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
             <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
             <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
            </div>
            </Link>
 
            <Link href='/dr_front' >
-           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
             <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
             <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
            </div>
@@ -111,19 +93,22 @@ const drappPersian = () => {
         </div>
   
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 whitespace-nowrap py-4 border-b-2 border-gray-700'>پلتفرم جامع بیمارستان </p>
-          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع کلینیک</p>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
+         
           <Link href='/dr_admin' >
-           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
-            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap '> محیط مدیریت</p>
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
             <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
            </div>
            </Link>
 
-           <Link href='/dr_front' >
-           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
-            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap '>محیط مراجعه کنندگان</p>
+           <Link href='/dr_clinic' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
             <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
            </div>
           </Link>
@@ -133,21 +118,23 @@ const drappPersian = () => {
           </div>
         </div>
 
-
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 whitespace-nowrap border-gray-700'>پلتفرم جامع ساختمان پزشکان</p>
-          <div className='flex sm:flex-col sm:justify-center m-4 justify-around'>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع ساختمان پزشکان</p>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
+         
           <Link href='/dr_admin' >
-           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
             <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
             <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
            </div>
            </Link>
 
            <Link href='/dr_front' >
-           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer  rounded items-center mt-6 ' >
-            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap '>محیط مراجعه کنندگان</p>
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
             <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
            </div>
           </Link>
@@ -156,6 +143,33 @@ const drappPersian = () => {
         
           </div>
         </div>
+
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع ساختمان بیمارستان </p>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+         
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr_front' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
+        
+          </div>
+        </div>
+       
    
       </div>
 

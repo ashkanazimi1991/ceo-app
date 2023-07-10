@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { RiMenuUnfoldFill, RiHome2Line } from 'react-icons/ri';
+import { BsCalendarDate } from 'react-icons/bs';
+import { FiLogIn } from 'react-icons/fi';
+
+
+
+
 import DrawerFront from './DrawerFront';
 import Image from 'next/image'
 
@@ -18,96 +24,93 @@ const psychology = () => {
     
     
     return (
-      <div  className= ' '>
-            <Image
-             className=" fixed bottm-0 -z-20  w-full md:h-full  object-cover brightness-50
+      <div  className= 'min-h-screen flex flex-col justify-center items-center bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 '>
+            {/* <Image
+             className=" fixed bottm-0 -z-20  w-full md:h-full   object-cover brightness-50
               opacity-100 "
              src="/images/dr_bg.jpg"
              width='1200'
              height='800'
              alt="CEO"
-            />
+            /> */}
       {/* menu */}
-      <div className='fixed z-10 bg-blue-200  w-full'>
-        <div className=' flex items-center    justify-between  '>
-        <Link href='/drappPersian'>
-            <div className='flex justify-center items-center'>
-            <Image src='/images/barsad.png' width='100' height='200' alt='psychology' className=' scale-100 hover:scale-110 pl-4 rounded-xl object-contain'/>
-            <p className='text-gary-400 sm:hidden tex-xs leading-4'>BARSAD<br></br>Psychology</p>
-            </div>
-        </Link>
-         <div className=' flex md:hidden '>
-            <div>
-                <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-sm '>صفحه اصلی</p>
+      <div className='z-20 px-2 fixed w-full  bg-slate-900 shadow-2xl top-0 '> 
+<div className='flex justify-between items-center'>
+<Link href='/drappPersian' >
+    <div className='flex items-center'>
+    <Image  src='/images/2.png'  alt="logo" width='50' height='50'
+                 className=" max-h-16 w-[100%] py-2 object-contain "/>
+    <h3 className='text-gray-400 text-xs pl-2  whitespace-nowrap'>CEO Developer <br></br> Community</h3>
+    </div>
+    </Link>
 
-                </Link>
-            </div>
-            <div>
-                <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-sm '>تست ها</p>
 
-                </Link>
-            </div>
-            <div>
-                <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-sm'>مقالات</p>
+   <div className='flex   items-center'>
+   <Link href='/contactUsPersian' >
+    <p className='py-2 my-2 text-white hover:text-green-400 cursor-pointer text-xs border-dashed border-2 border-sky-500 rounded-xl  px-2'>ثبت سفارش</p>
+   </Link>
+   
+   
+   <div>
+         
+          <button onClick={handleOpen}>
+          <RiMenuUnfoldFill className='text-white text-2xl mx-4'/>
+          </button>
+          <DrawerFront isOpen={isOpen} onClose={handleClose} />
+   </div>
+   
+   
+    
+    </div> 
+    
 
-                </Link>
-            </div>
-            <div>
-                <Link href='/'>
-                    <p className=' text-gray-700 p-2 text-sm'>درباره ما</p>
+    
 
-                </Link>
-            </div>
-            
-         </div>
-         <div className=' flex p-2 '>
-         <div>
-                <Link href='/'>
-                    <p className=' text-purple-500   text-xs rounded border md:hidden border-gray-400 px-4 py-2'> ارتباط با ما</p>
-
-                </Link>
-         </div>
-         <div>
-                <Link href='/'>
-                    <p className=' bg-black text-gray-200 mx-2 text-xs rounded whitespace-nowrap  px-4 py-2'>ثبت نام / ورود</p>
-
-                </Link>
-            </div>
-
-{/* drawer BTN.......................... */}
-            <div className='hidden md:block items-center my-1 justify-center'>
-                <button onClick={handleOpen}>
-                <RiMenuUnfoldFill className='text-black text-2xl mx-4'/>
-                </button>
-                <DrawerFront isOpen={isOpen} onClose={handleClose} />
-             </div>
-{/* drawer BTN.......................... */}
-            
-         </div>
-            
-        </div>
-
-      </div>
+</div>
+</div>
         {/* /menu */}
-        <div className='flex flex-row-reverse px-[10%] lg:px-[5%]  md:px-[2%] md:flex-col py-40 p-10'>
-        <div className=' w-1/2 flex flex-col justify-center items-center  px-[2%]  md:w-full '>
-          <p className=' py-2 text-center w-full bg-blue-100 shadow-xl rounded-lg text-purple-500 '>
-            کلینیک روانشناسی سرشت برساد
-          </p>
-          <p className='text-center text-blue-300 text-lg py-4'>
-            مشاور سلامت ذهنی شما
-          </p>
+        <div className='flex flex-row-reverse px-[10%] lg:px-[5%] md:px-[2%] md:flex-col-reverse py-[8%] md:pt-20 '>
+          
+          <div className=' w-1/2 flex  border-l-2 border-gray-400 md:border-l-0  flex-col justify-center items-center  px-[2%]  md:w-full '>
+         <div className='flex  w-full items-center justify-center  py-2 '>
+            <p className='  text-right w-full text-2xl  text-blue-100 '>
+              دکتر فرزاد راد
+            </p>
+          <Image src='/images/heartIcon.gif' width='100' height='100' alt='onlineceo' className='w-12 drop-shadow-txl   object-contain'/>
+          </div> 
+   
         
-          <p className=' text-center text-xs text-gray-200 leading-8 pb-4'>
-          کلینیک مشاوره روانشناسی سرشت برساد ارائه دهنده خدمات مشاوره روانشناسی حضوری و مجازی با بیش از100 متخصص در حوزه های مختلف روانشناسی آماده ارائه خدمات مشاوره تلفنی و حضوری به مشتریان می باشد
+      
+        
+          <p className=' text-right text-sm px-[5%] text-gray-100 leading-8 py-4'>
+          فارغ التحصیل رشته اینترونشنال کاردیولوژی در ۱۳۹۱ از دانشگاه علوم پزشکی شهید بهشتی دوران پزشکی عمومی در دانشگاه شهید پزشکی بهشتی و دوره دستیاری را در دانشگاه علوم پزشکی اصفهان گذرانده است وی در حال حاضر بیمارستان‌های غرضی و مرکز قلب سعدی مشغول به کار  و ارائه خدمات می باشد.
           </p>
 
+          <div className="flex justify-around space-x-2">
+         
+         <Link href='' >
+          <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+            rounded items-center py-1 ' >
+           <BsCalendarDate className="text-2xl mx-2 text-rose-100 hover:text-green-400" />
+           <p className='text-gray-100 text-md px-4 py-2 text-bold sm:text-xs whitespace-nowrap'>  دریافت نوبت</p>
+          </div>
+          </Link>
+
+          <Link href='' >
+          <div className='flex justify-around py-1 border-2 border-blue-200 hover:border-green-400 cursor-pointer
+            rounded items-center  ' >
+           <FiLogIn className="text-2xl mx-2 text-rose-100 hover:text-green-400" />
+           <p className='text-gray-100 text-md px-4 py-2 text-bold sm:text-xs whitespace-nowrap'>   ورود / ثبت نام </p>
+          </div>
+          </Link>
+
+        
+
+       </div>
+
         </div>
-        <div className='w-1/2    md:w-full'>
-        <Image src='/images/s2.jpg' width='700' height='700' alt='onlineceo' className='w-full h-full transition delay-150 duration-300 ease-in-out scale-75 hover:scale-100 rounded-xl object-cover'/>
+        <div className='w-1/2 flex justify-center    md:w-full'>
+        <Image src='/images/drapp.png' width='700' height='700' alt='onlineceo' className='w-full md:w-3/4 h-full  transition delay-150 duration-300 ease-in-out scale-[95%] hover:scale-[98%]  object-contain'/>
         </div>
         </div>
     </div>

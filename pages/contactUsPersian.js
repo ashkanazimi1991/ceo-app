@@ -83,13 +83,7 @@ const handleChange = ({ target }) =>
           flex justify-center ">
                     
                 <div className='relative  w-full'>              
-                <Image
-                      className=" fixed -z-20  w-[100%] md:w-full object-cover h-full 
-                       opacity-100 sm:opacity-100"
-                  src="/images/bb.webp"
-                  width='1200'
-                   height='800'
-                    alt="CEO"/>
+                 
                     <Link href='/persian'>
                     <BsArrowLeft className='fixed z-20 bg-[#1E9F93] p-2 ring-white ring-2 
                       rounded-full  my-4 ml-6  sm:text-3xl text-5xl text-[#fff]

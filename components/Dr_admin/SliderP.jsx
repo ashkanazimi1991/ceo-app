@@ -32,7 +32,7 @@ export default function App() {
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
             </div>
-            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب   و همکاری دلسوزانه با مجموعه که سبب افزایش عملکرد اعضا شده است. </p>
             <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
 
           </div>
@@ -47,7 +47,7 @@ export default function App() {
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
             </div>
-            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب   و همکاری دلسوزانه با مجموعه که سبب افزایش عملکرد اعضا شده است. </p>
             <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
 
           </div>
@@ -77,7 +77,7 @@ export default function App() {
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
             </div>
-            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب   و همکاری دلسوزانه با مجموعه که سبب افزایش عملکرد اعضا شده است. </p>
             <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
 
           </div>
@@ -94,7 +94,7 @@ export default function App() {
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
             </div>
-            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب   و همکاری دلسوزانه با مجموعه که سبب افزایش عملکرد اعضا شده است. </p>
             <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
 
           </div>
@@ -109,7 +109,7 @@ export default function App() {
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
             </div>
-            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب   و همکاری دلسوزانه با مجموعه که سبب افزایش عملکرد اعضا شده است. </p>
             <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
 
           </div>
@@ -124,7 +124,7 @@ export default function App() {
             <p className="px-2 text-gray-400 text-xs text-right"> مجموعه مدیریت آنلاین</p>
             </div>
             </div>
-            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب سرشت برساد و همکاری دلسوزانه با مجموعه که سبب افزایش روحیه تیمی پرسنل شده است. </p>
+            <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 border-t-2 border-gray-400 leading-6">   با تشکر از کلینیک و کادر مجرب   و همکاری دلسوزانه با مجموعه که سبب افزایش عملکرد اعضا شده است. </p>
             <p className="px-2 text-gray-400 text-xs text-right py-4 mt-4 ">  1402/04/04 </p>
 
           </div>
