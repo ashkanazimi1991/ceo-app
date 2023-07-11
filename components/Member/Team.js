@@ -141,7 +141,7 @@ const Team = () => {
                            <div className="flex flex-col  justify-center items-center transition-colors duration-200
                      transform  group hover:border py-10 rounded-xl">
                         <Image width='100' height='100'
-                         src="/images/jaleh.jpg" alt="اشکان عظیمی " 
+                         src="/images/j2.jpg" alt="اشکان عظیمی " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white
