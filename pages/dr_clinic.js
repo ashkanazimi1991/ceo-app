@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Hero from '../components/Dr_admin/Hero'
+import Hero_clinic from '../components/Dr_front/Hero_clinic'
 import Link from 'next/link'
 import Head from 'next/head'
 import { BsArrowRightShort, BsFillTelephoneFill,BsCameraVideoFill, BsFillChatLeftTextFill } from 'react-icons/bs';
@@ -20,7 +20,7 @@ const dr_clinic = () => {
                 <link rel='manifest' href='/manifest.json' />
       
     </Head>
-       <Hero/> 
+       <Hero_clinic/> 
 
   <div>
     <div className='flex bg-gray-100 flex-col justify-center'>

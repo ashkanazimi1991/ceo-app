@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Hero from '../components/Dr_admin/Hero'
+import HeroDrOffice from '../components/Dr_front/HeroDrOffice'
 import Link from 'next/link'
 import Head from 'next/head'
 import { BsArrowDown, BsFillTelephoneFill,BsCameraVideoFill, BsFillChatLeftTextFill } from 'react-icons/bs';
@@ -24,7 +24,7 @@ const dr_front = () => {
                 <link rel='manifest' href='/manifest.json' />
       
     </Head>
-       <Hero/> 
+       <HeroDrOffice/> 
 
   <div>
     <div className='flex bg-gray-100 flex-col justify-center'>
@@ -235,49 +235,49 @@ const dr_front = () => {
     <div className=' grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-center px-[15%] md:px-4 my-6'>
        
     <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
 
         <div className='flex flex-col  bg-blue-100 shadow-xl rounded-xl '>
-          <Image src='/images/disease6.jpg' width='200' height='400' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
+          <Image src='/images/disease6.jpg' width='700' height='600' alt='نرم افزار کلینیک'  className='md:h-36 h-72  w-full object-top object-cover rounded-xl'/>
           <p className='text-sm text-center py-2 px-4 whitespace-nowrap'>  نمونه کار</p>  
           <p className='text-sm text-center py-2 px-4 border-t-2 border-gray-300 hover:border-green-500 hover:text-green-800  cursor-pointer'>مشاهده </p>  
         </div>
