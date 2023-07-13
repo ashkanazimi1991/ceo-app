@@ -161,7 +161,7 @@ const dr_clinic = () => {
                 <button className='z-20 absolute top-3/4 left-1/2 group -translate-x-1/2 -translate-y-1/4 bg-white text-balck whitespace-nowrap  text-xs px-4 py-2 rounded'>
                   مشاوره ارتباطی
                        {/* <div className='group w-full'>
-                        <BsArrowRightShort className='text-green-400 ml-2 text-2xl hidden group-hover:block  ' />
+                    <BsArrowRightShort className='text-green-400 ml-2 text-2xl hidden group-hover:block  ' />
                     </div> */}
                   </button>
             </div>

@@ -192,6 +192,31 @@ const Team = () => {
                         </div> */}
                     </div>
 
+
+
+            {/* parya......................................... */}
+                    <div className="flex flex-col  justify-center items-center transition-colors duration-200
+                     transform  group hover:border py-10 rounded-xl">
+                        <Image width='200' height='200'
+                         src="/images/parya.jpg" alt="اشکان عظیمی " 
+                         className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
+                        />
+                        <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white
+                         group-hover:text-white">Parya Ghaderi</h1>
+                        
+                        <h2 className="mt-2 text-gray-500 capitalize text-center dark:text-gray-300
+                         group-hover:text-gray-300">UI  Designer - FrontEnd Developer </h2>
+                        
+                        {/* <div className="flex mt-3 -mx-2">
+                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
+                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
+                            </Link>  
+                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
+                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                        </Link>  
+                        </div> */}
+                    </div>
+
                         {/* ashkan......................................... */}
                   
 
@@ -216,6 +241,62 @@ const Team = () => {
                         </Link>  
                         </div> */}
                     </div>
+
+
+
+                   {/* ali......................................... */}
+                  
+
+                    <div className="flex flex-col  justify-center items-center transition-colors duration-200
+                     transform  group hover:border py-10 rounded-xl">
+                          <Image width='100' height='100'
+                         src="/images/ali.jpg" alt=" علی مقدم " 
+                         className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
+                        />
+                        <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white
+                         group-hover:text-white">Ali  Moghadam</h1>
+                        
+                        <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
+                         group-hover:text-gray-300">FrontEnd Developer</h2>
+                        
+                        {/* <div className="flex mt-3 -mx-2">
+                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
+                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
+                            </Link>  
+                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
+                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                        </Link>  
+                        </div> */}
+                    </div>
+
+
+
+
+                              {/* amir......................................... */}
+                  
+
+                              <div className="flex flex-col  justify-center items-center transition-colors duration-200
+                     transform  group hover:border py-10 rounded-xl">
+                          <Image width='100' height='100'
+                         src="/images/amir2.jpg" alt=" امیر خیراندیس " 
+                         className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
+                        />
+                        <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white
+                         group-hover:text-white">َAmir Khyrandish</h1>
+                        
+                        <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
+                         group-hover:text-gray-300">Market Manager </h2>
+                        
+                        {/* <div className="flex mt-3 -mx-2">
+                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
+                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
+                            </Link>  
+                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
+                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                        </Link>  
+                        </div> */}
+                    </div>
+
 
 
 
@@ -246,7 +327,7 @@ const Team = () => {
                                hover:bg-gray-600 dark:border-gray-800" > +10</h1>
                           </div>
 
-                          <h1 className='text-white py-5 text-2xl '>
+                          <h1 className='text-gray-200 py-5 text-md '>
                           Other Technical Team
                           </h1>
                     </div>
