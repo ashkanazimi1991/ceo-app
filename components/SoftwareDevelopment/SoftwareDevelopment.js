@@ -5,6 +5,8 @@ import Link from 'next/link';
 import dynamic from "next/dynamic";
 
 const Slider2 = dynamic(() => import('../cardslider/cardSlider2/Slider2'))
+const SliderMainE = dynamic(() => import('../SliderMain/SliderMainE'))
+
 const AcordionE = dynamic(() => import('../Acordion/AcordianE'))
 
 
@@ -136,7 +138,8 @@ export default function SoftwareDevelopment() {
 
          
 
-          <div className='flex pt-4 flex-col min-h-[450px] justify-center'>
+          <div className='flex pt-4 flex-col min-h-[450px] bg-[#000000a8] justify-center'>
+          <p className='text-gray-400 text-center py-6'>Dedicated web and mobile user interfaces, based on JavaScript and global UI and UX standards  </p>
             <Slider2   
             img1='/images/1.png' img2='/images/cat.png' 
             img3='/images/3.png' img4='/images/fibex2.png'
@@ -144,7 +147,14 @@ export default function SoftwareDevelopment() {
           title1='Startup Ideas' title2='Large-scale Shops' title3='Healthcare and Lifestyle'
            title4='Blockchain and Crypto' title5='Service Base Platforms' title6='Robotic and IoT' 
           />
+
+
+            <p className='text-gray-400 text-center py-6'> Live research of management departments in comprehensive and exclusive dashboards with Python programming language </p>
+
+            <SliderMainE/>
           </div>
+
+          
 
        
 {/* ........................................ */}

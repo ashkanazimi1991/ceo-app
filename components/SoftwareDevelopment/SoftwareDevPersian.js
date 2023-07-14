@@ -2,8 +2,9 @@ import React ,{useState}from 'react';
 import Link from 'next/link'
 // import { useTypewriter } from 'react-simple-typewriter'
 import Acordian from '../Acordion/Acordion'
-
+import SliderMain from '../SliderMain/SliderMain'
 import dynamic from "next/dynamic";
+
 
 const Slider2 = dynamic(() => import('../cardslider/cardSlider2/Slider2'))
 
@@ -145,7 +146,8 @@ export default function SoftwareDevPersian() {
 
          
 
-          <div className='flex pt-4 flex-col min-h-[450px] justify-center'>
+          <div className='flex pt-4 flex-col min-h-[450px] bg-[#000000a8] justify-center'>
+            <p className='text-gray-400 text-center py-6'> رابط های کاربری تحت وب و موبایل اختصاصی, بر پایه جاوا اسکریپت و استاندارد های جهانی </p>
             <Slider2   
             img1='/images/1.png' img2='/images/cat.png' 
             img3='/images/3.png' img4='/images/fibex2.png'
@@ -153,6 +155,14 @@ export default function SoftwareDevPersian() {
           title1='Startup Ideas' title2='Large-scale Shops' title3='Healthcare and Lifestyle'
            title4='Blockchain and Crypto' title5='Service Base Platforms' title6='Robotic and IoT' 
           />
+
+
+          {/* .................................................slider................................... */}
+          <p className='text-gray-400 text-center py-6'> دادکاوی لایو بخش های مدیریتی در داشبوردهای جامع و اختصاصی  با زبان برنامه نویسی پایتون </p>
+
+              <SliderMain/>
+        
+          
           </div>
 
        

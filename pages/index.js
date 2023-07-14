@@ -22,8 +22,8 @@ export default function Home() {
       </Head>
       <div className="flex flex-col">
         <Hero/>
-      <Gig/>
       <SoftwareDevelopment/>
+      <Gig/>
       <WhyE/>
 
     

@@ -284,7 +284,7 @@ class TradeChart extends React.Component {
 
 
 <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="candlestick" height={500} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="candlestick" height={400} />
 </div>
 
 

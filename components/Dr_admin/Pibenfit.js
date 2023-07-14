@@ -29,7 +29,7 @@ class Pibenfit extends React.Component {
               enabled: true
             },
             fill: {
-              type: 'gradient',
+              type: 'color',
             },
             legend: {
               formatter: function(val, opts) {
