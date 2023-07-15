@@ -26,9 +26,9 @@ const Hero_clinic = () => {
     return (
       <div  className= 'min-h-screen flex flex-col justify-center items-center '>
             <Image
-             className=" fixed bottm-0 -z-20  w-full md:h-full min-h-screen   object-cover brightness-50
+             className=" fixed bottm-0 -z-20 bg-top w-full md:h-full min-h-screen   object-cover brightness-50
               opacity-100 "
-             src="/images/mentalbg2.jpg"
+             src="/images/mentalbg.jpg"
              width='1200'
              height='800'
              alt="CEO"
