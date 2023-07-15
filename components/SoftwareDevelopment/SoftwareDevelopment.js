@@ -151,7 +151,7 @@ export default function SoftwareDevelopment() {
 
             <p className='text-gray-400 text-center py-6'> Live research of management departments in comprehensive and exclusive dashboards with Python programming language </p>
 
-            <SliderMainE/>
+            {/* <SliderMainE/> */}
           </div>
 
           

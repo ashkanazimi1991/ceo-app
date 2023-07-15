@@ -150,19 +150,16 @@ const Team = () => {
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
                          group-hover:text-gray-300">FrontEnd Developer </h2>
                         
-                        {/* <div className="flex mt-3 -mx-2">
-                        <Link href="https://instagram.com/jaleh.beiraghy?igshid=MzRlODBiNWFlZA=="  target="_blank"   
-                         aria-label="Instagram"  >
-                         <FaInstagram className=" w-10 text-2xl text-[#fff] cursor-pointer " />
-                        </Link> 
-                        <Link href="mailto:Beiraghyjaleh@gmail.com" target='_blank'  aria-label='mail'>
-                            <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                         </Link>   
-
-                        <Link href='tel:+989146232212'>
+                        <div className="flex mt-3 -mx-2">
+                           <Link href='tel:+0989146232212'>
                               <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
                             </Link> 
-                        </div> */}
+
+
+                              <Link href="mailto:Beiraghyjaleh@gmail.com" target='_blank'  aria-label='mail'>
+                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                              </Link>  
+                        </div>
                     </div>
 
                            {/* salar......................................... */}
@@ -177,7 +174,16 @@ const Team = () => {
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
                          group-hover:text-gray-300">Full-stack Developer</h2>
-                        
+                          <div className="flex mt-3 -mx-2">
+                           <Link href='tel:'>
+                              <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
+                            </Link> 
+
+
+                              <Link href="mailto:" target='_blank'  aria-label='mail'>
+                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                              </Link>  
+                        </div>
               
                     </div>
 
@@ -194,14 +200,16 @@ const Team = () => {
                         <h2 className="mt-2 text-gray-500 capitalize text-center dark:text-gray-300
                          group-hover:text-gray-300">UI  Designer - FrontEnd Developer </h2>
                         
-                        {/* <div className="flex mt-3 -mx-2">
-                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
-                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
-                            </Link>  
-                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
-                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                        </Link>  
-                        </div> */}
+                        <div className="flex mt-3 -mx-2">
+                           <Link href='tel:'>
+                              <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
+                            </Link> 
+
+
+                              <Link href="mailto:" target='_blank'  aria-label='mail'>
+                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                              </Link>  
+                        </div>
                     </div>
 
 
@@ -219,14 +227,16 @@ const Team = () => {
                         <h2 className="mt-2 text-gray-500 capitalize text-center dark:text-gray-300
                          group-hover:text-gray-300">UI  Designer - FrontEnd Developer </h2>
                         
-                        {/* <div className="flex mt-3 -mx-2">
-                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
-                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
-                            </Link>  
-                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
-                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                        </Link>  
-                        </div> */}
+                        <div className="flex mt-3 -mx-2">
+                           <Link href='tel:'>
+                              <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
+                            </Link> 
+
+
+                              <Link href="mailto:pariyaghaderi766@gmail.com" target='_blank'  aria-label='mail'>
+                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                              </Link>  
+                        </div>
                     </div>
 
                         {/* ashkan......................................... */}
@@ -244,14 +254,16 @@ const Team = () => {
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
                          group-hover:text-gray-300">BackEnd Developer</h2>
                         
-                        {/* <div className="flex mt-3 -mx-2">
-                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
-                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
-                            </Link>  
-                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
-                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                        </Link>  
-                        </div> */}
+                        <div className="flex mt-3 -mx-2">
+                           <Link href='tel:'>
+                              <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
+                            </Link> 
+
+
+                              <Link href="mailto:" target='_blank'  aria-label='mail'>
+                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                              </Link>  
+                        </div>
                     </div>
 
 
@@ -271,14 +283,16 @@ const Team = () => {
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
                          group-hover:text-gray-300">FrontEnd Developer</h2>
                         
-                        {/* <div className="flex mt-3 -mx-2">
-                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
-                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
-                            </Link>  
-                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
-                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                        </Link>  
-                        </div> */}
+                        <div className="flex mt-3 -mx-2">
+                           <Link href='tel:+989044262926'>
+                              <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
+                            </Link> 
+
+
+                              <Link href="mailto:elrainali01@gmail.com" target='_blank'  aria-label='mail'>
+                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                              </Link>  
+                        </div>
                     </div>
 
 
@@ -299,14 +313,16 @@ const Team = () => {
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
                          group-hover:text-gray-300">Market Manager </h2>
                         
-                        {/* <div className="flex mt-3 -mx-2">
-                            <Link href='https://www.instagram.com/ashkanazimi.info' target='_blank'  aria-label='Instagram'>
-                              <FaInstagram className=' w-10 text-2xl text-[#fff] cursor-pointer'/> 
-                            </Link>  
-                            <Link href='https://t.me/+ll4bLWoavUgyZTI0' target='_blank'  aria-label='telegram'>
-                          <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                        </Link>  
-                        </div> */}
+                        <div className="flex mt-3 -mx-2">
+                           <Link href='tel:+989141472619'>
+                              <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
+                            </Link> 
+
+
+                              <Link href="mailto:" target='_blank'  aria-label='mail'>
+                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                              </Link>  
+                        </div>
                     </div>
 
 

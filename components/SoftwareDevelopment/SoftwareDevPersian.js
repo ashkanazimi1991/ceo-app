@@ -147,7 +147,7 @@ export default function SoftwareDevPersian() {
          
 
           <div className='flex pt-4 flex-col min-h-[450px] bg-[#000000a8] justify-center'>
-            <p className='text-gray-400 text-center py-6'> رابط های کاربری تحت وب و موبایل اختصاصی, بر پایه جاوا اسکریپت و استاندارد های جهانی </p>
+            <p className='text-gray-400 text-center px-[5%] py-6'> رابط های کاربری تحت وب و موبایل اختصاصی, بر پایه جاوا اسکریپت و استاندارد های جهانی </p>
             <Slider2   
             img1='/images/1.png' img2='/images/cat.png' 
             img3='/images/3.png' img4='/images/fibex2.png'
@@ -158,9 +158,9 @@ export default function SoftwareDevPersian() {
 
 
           {/* .................................................slider................................... */}
-          <p className='text-gray-400 text-center py-6'> دادکاوی لایو بخش های مدیریتی در داشبوردهای جامع و اختصاصی  با زبان برنامه نویسی پایتون </p>
+          <p className='text-gray-400 text-center leading-7 px-[5%] py-6'> دادکاوی لایو بخش های مدیریتی در داشبوردهای جامع و اختصاصی  با زبان برنامه نویسی پایتون </p>
 
-              <SliderMain/>
+              {/* <SliderMain/> */}
         
           
           </div>
@@ -177,10 +177,10 @@ export default function SoftwareDevPersian() {
     {/* acordion................................................. */}     
     <div className="w-full md:w-full bg-[#000000c5]">
             <div className='flex justify-around w-full py-6  flex-row-reverse'>
-                <h1 className='text-right w-1/2  text-gray-400   text-xl md:text-lg '>  
+                <h1 className='text-right w-1/2  text-gray-400 px-[5%]  text-md  '>  
                   تجربه های ما    </h1>
                 <Link href="/whyP">       
-                <h2 className='animate-pulse  text-sm text-blue-400 border-t-2 border-blue-400 py-2 px-4 rounded-md   md:text-lg text-center'>
+                <h2 className='animate-pulse whitespace-nowrap text-sm text-blue-400 px-[5%]  text-md py-2    text-center'>
                   چرایی همکاری با ما ؟
                 </h2>
                 </Link>
