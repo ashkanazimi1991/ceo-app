@@ -30,9 +30,9 @@ const Team = () => {
                      transform  group hover:border  rounded-xl">
                         <Image width='100' height='100'
                          src="/images/ashkan2.jpg" alt="اشکان عظیمی " 
-                         className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
+                         className="object-cover w-32 h-32 rounded-full   brightness-95 ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl   font-semibold text-gray-700 
+                        <h1 className="mt-4 text-md   font-semibold text-gray-700 
                          dark:text-white
                          group-hover:text-white">Ashkan Azimi</h1>
                         
@@ -60,7 +60,7 @@ const Team = () => {
                          src="/images/sajjad.jpg" alt="اشکان عظیمی " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Sajjad Abajali</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
@@ -87,7 +87,7 @@ const Team = () => {
                          src="/images/bita3.jpg" alt="بیتا میسوری " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Bita Maysoori</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
@@ -102,7 +102,7 @@ const Team = () => {
                           <TbBrandTelegram className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                         </Link>  
 
-                        <Link href='https://bitmay.info' target='_blank'  aria-label='telegram'>
+                        <Link href='/bitmay' target='_blank'  aria-label='telegram'>
                               <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                            </Link>
                         </div>
@@ -115,7 +115,7 @@ const Team = () => {
                          src="/images/amir.jpg" alt="amir salmani " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Amir Salmani</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
@@ -144,7 +144,7 @@ const Team = () => {
                          src="/images/j3.jpg" alt="" 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Jaleh Beiraghy</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
@@ -169,7 +169,7 @@ const Team = () => {
                          src="/images/salar.jpg" alt="ا" 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Salar Farzane</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
@@ -194,7 +194,7 @@ const Team = () => {
                          src="/images/sara.jpg" alt="اشکان عظیمی " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Sara Kian</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize text-center dark:text-gray-300
@@ -221,7 +221,7 @@ const Team = () => {
                          src="/images/parya.jpg" alt="Parya ghaderi " 
                          className="object-cover w-32 brightness-95 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Parya Ghaderi</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize text-center dark:text-gray-300
@@ -248,7 +248,7 @@ const Team = () => {
                          src="/images/ramin.jpg" alt="اشکان عظیمی " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
                          group-hover:text-white">Ramin Farzin</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
@@ -277,8 +277,8 @@ const Team = () => {
                          src="/images/ali.jpg" alt=" علی مقدم " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
-                         group-hover:text-white">Ali  Moghadam</h1>
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
+                         group-hover:text-white">Ali Moghadam</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
                          group-hover:text-gray-300">FrontEnd Developer</h2>
@@ -307,11 +307,11 @@ const Team = () => {
                          src="/images/amir2.jpg" alt=" امیر خیراندیس " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-xl font-semibold text-gray-700 capitalize dark:text-white
-                         group-hover:text-white">Amir Khyrandish</h1>
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
+                         group-hover:text-white">AmirHosain Khyrandish</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
-                         group-hover:text-gray-300">Market Manager </h2>
+                         group-hover:text-gray-300">R & D - Market Manager </h2>
                         
                         <div className="flex mt-3 -mx-2">
                            <Link href='tel:+989141472619'>
