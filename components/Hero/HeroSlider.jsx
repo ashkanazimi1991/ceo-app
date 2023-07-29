@@ -23,7 +23,7 @@ export default function App() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide className="shadow-2xl  ">
+        <SwiperSlide className="shadow-2xl ">
           <div className="flex flex-col w-full h-full bg-slate-600 justify-center items-center ">
             <div className="flex justify-around items-center flex-row-reverse">
             <Image src='/images/ashkan2.jpg' width='100' height='100'  className='rounded-xl   w-18 h-20  object-cover'/>

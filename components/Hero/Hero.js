@@ -49,9 +49,9 @@ function Hero() {
             </div>
            {/* button col */}
             <div className='flex justify-center '>
-            <div className='bg-[#1c5f7b] w-[100%] h-full'>
+            <div className='bg-[#1c5f7b] w-[100%] '>
                     <Image  src={img3} height='50' width='50' alt="onlin ceo" 
-                      className=" max-h-20 p-6 sm:p-3  sm:max-h-16 w-[100%] object-contain  "/>   
+                      className=" max-h-20 p-4 sm:p-3  sm:max-h-16 w-[100%] object-contain  "/>   
                     <div className='flex lg:flex-col md:flex-row justify-center  '>
                       <a aria-label='Web Development' >
                         <h1 className='text-center text-[#fdfdfd] text-xl md:text-sm 2xl:text-lg lg:text-sm drop-shadow-4xl xl:text-sm pb-2 '>
@@ -61,9 +61,9 @@ function Hero() {
                     
                 </div>
 
-                <div className='bg-gray-600 w-[100%] h-full'>
+                <div className='bg-gray-600 w-[100%] '>
                     <Image  src={img4} height='50' width='50'  alt="onlin ceo"
-                   className=" max-h-20 p-6 sm:p-3  sm:max-h-16 w-[100%] object-contain  "/>  
+                   className=" max-h-20 p-4 sm:p-3  sm:max-h-16 w-[100%] object-contain  "/>  
                     <div className='flex flex-row lg:flex-col md:flex-row justify-center '>
                     <a aria-label='Web Development' >
                         <h1 className='text-center text-white drop-shadow-4xl  text-xl 
@@ -81,9 +81,9 @@ function Hero() {
           {/* bottom div ............................................................................................... */}
               <div className='flex flex-col justify-around pt-[10%] bg-[#040f14e1] h-3/5 '>
                       <h1 className='text-white  tracking-widest  pl-8 lg:pl-6 text-3xl sm:text-md  pt-10 '>
-                        Wellcome</h1>
+                        Welcome</h1>
                         <a aria-label=' Build powerful platforms for your own startup, business or portfolio by CEO Developers' >
-                      <p className='text-[#999999] text-lg py-4 sm:pt-5 px-[5%] sm:text-sm'>
+                      <p className='text-[#999999] text-md py-4 sm:pt-5 px-[5%] sm:text-sm'>
                         Build powerful platforms for your own startup, 
                         business or portfolio by CEO Developers.   
                       </p>
@@ -101,7 +101,7 @@ function Hero() {
                     </Link>
                   </div>
 
-      <div className=' relative bottom-0'>
+      <div className=' flex justify-center items-center '>
           <SliderOne   
           img1='/images/js.png' img2='/images/python.png' img3='/images/c++.png' img4='/images/android.png' img5='/images/apple.png' img6='/images/windos.png'
           img7='/images/arduino.png' img8='/images/RaspberryPi.png' img9='/images/react.png' img10='/images/dj.png' />

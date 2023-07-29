@@ -6,6 +6,7 @@ import Navbar from '../Navbar/Navbar';
 import img2 from '../../public/images/2.png'
 import img3 from '../../public/images/96.png'
 import img4 from '../../public/images/dd.png'
+// import HeroSlider from '../Hero/HeroSlider'
 
 
 function HeroPersian() {
@@ -106,9 +107,12 @@ function HeroPersian() {
         </div>
         
         {/* main right div */}
-        <div className='w-4/6 h-full flex flex-col  md:w-screen sm:hidden
+        <div className='w-4/6  flex flex-col justify-center items-center  md:w-screen sm:hidden
          bg-[#0000003d] '>
+          <div  className=' w-full'>
+            {/* <HeroSlider/> */}
 
+          </div>
         </div>
       </div>
     

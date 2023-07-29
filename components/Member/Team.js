@@ -159,6 +159,10 @@ const Team = () => {
                               <Link href="mailto:Beiraghyjaleh@gmail.com" target='_blank'  aria-label='mail'>
                                   <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                               </Link>  
+
+                              <Link href='/cv_Jaleh_Beiraghy' target='_blank'  aria-label='telegram'>
+                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                           </Link>
                         </div>
                     </div>
 
@@ -183,6 +187,10 @@ const Team = () => {
                               <Link href="mailto:" target='_blank'  aria-label='mail'>
                                   <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                               </Link>  
+
+                              <Link href='/' target='_blank'  aria-label='telegram'>
+                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                           </Link>
                         </div>
               
                     </div>
@@ -209,6 +217,10 @@ const Team = () => {
                               <Link href="mailto:" target='_blank'  aria-label='mail'>
                                   <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                               </Link>  
+
+                              <Link href='/' target='_blank'  aria-label='telegram'>
+                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                           </Link>
                         </div>
                     </div>
 
@@ -236,6 +248,10 @@ const Team = () => {
                               <Link href="mailto:pariyaghaderi766@gmail.com" target='_blank'  aria-label='mail'>
                                   <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                               </Link>  
+
+                              <Link href='/' target='_blank'  aria-label='telegram'>
+                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                           </Link>
                         </div>
                     </div>
 
@@ -263,6 +279,10 @@ const Team = () => {
                               <Link href="mailto:" target='_blank'  aria-label='mail'>
                                   <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                               </Link>  
+
+                              <Link href='/' target='_blank'  aria-label='telegram'>
+                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                           </Link>
                         </div>
                     </div>
 
@@ -292,6 +312,11 @@ const Team = () => {
                               <Link href="mailto:elrainali01@gmail.com" target='_blank'  aria-label='mail'>
                                   <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                               </Link>  
+
+
+                              <Link href='/cv_ali_moghadam' target='_blank'  aria-label='telegram'>
+                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                           </Link>
                         </div>
                     </div>
 
@@ -322,6 +347,10 @@ const Team = () => {
                               <Link href="mailto:" target='_blank'  aria-label='mail'>
                                   <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
                               </Link>  
+
+                              <Link href='/' target='_blank'  aria-label='telegram'>
+                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
+                           </Link>
                         </div>
                     </div>
 

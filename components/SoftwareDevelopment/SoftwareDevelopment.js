@@ -23,7 +23,7 @@ export default function SoftwareDevelopment() {
   const [open, setOpen ] = useState(false);
   const toggle = ( id) => {
     if(open === id) {
-      return setOpen(null)
+      return setOpen(null) 
     }
     setOpen(id)
   }

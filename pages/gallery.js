@@ -17,6 +17,7 @@ import img5 from '../public/images/pet4.png'
 import img6 from '../public/images/fibex.png'
 import img7 from '../public/images/sssdd.png'
 import img8 from '../public/images/iot2.png'
+import img9 from '../public/images/fastfoodp.png'
 
 
 
@@ -239,8 +240,8 @@ const gallery = () => {
                 <td className="py-4 px-3">
                     JSX
                 </td>
-                <td className="py-4 px-3">
-                    Landing Page
+                <td className="py-4 px-3 whitespace-nowrap">
+                Web Application
                 </td>
             </tr>
        
@@ -356,7 +357,7 @@ const gallery = () => {
                     JSX
                 </td>
                 <td className="py-4 px-3">
-                    Landing Page
+                    Web Application
                 </td>
             </tr>
        
@@ -468,8 +469,8 @@ const gallery = () => {
                 <td className="py-4 px-3">
                     JSX
                 </td>
-                <td className="py-4 px-3">
-                    Landing Page
+                <td className="py-4 px-3 whitespace-nowrap">
+                      Web Application
                 </td>
             </tr>
        
@@ -523,6 +524,121 @@ const gallery = () => {
 
         </div>
 
+
+{/* Food......................................... */}
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+         items-center  rounded-xl">
+
+            <Model isVisible={showModel4} onclose={() => setShowModal4(false)}>
+            <video   className="w-[60%] sm:w-[100%] md:w-[70%]  " autoPlay loop  controls >
+                    <source   src="/video/"   type="video/mp4"  />
+                    Your browser does not support the video tag.
+                </video>
+             </Model>
+             <div className=' relative top-48 pl-10 cursor-pointer items-center '>
+                        <button onClick={() => setShowModal4(true)} className='w-20 h-20'>
+                        <FaPlayCircle  className="text-5xl animate-pulse  text-[#dd0101]"/>
+                        </button>
+                    </div>
+
+         <h1 className="mt-4 text-center text-2xl font-semibold text-gray-700 
+          ">Restaurant and Food  </h1>
+            <Image  src={img9}  alt="carnet" width='350' height='350'
+                 className=" max-h-58 my-8   sm:w-[80%] w-[70%] object-contain "/>
+                 
+         <h2 className="mt-2 text-gray-500 text-center">Portfolio of your service and integrated platform with  JPS system Delivery  </h2>
+
+<div className="   py-5 relative shadow-md sm:rounded-lg">
+    <table className="w-full text-sm text-left text-gray-400  ">
+        <thead className="text-lg text-gray-400  tracking-wide   border-x-2  ">
+            <tr>
+                <th scope="col" className="py-3 px-3">
+                    Framework
+                </th>
+                <th scope="col" className="py-3 px-3">
+                language
+                </th>
+                <th scope="col" className="py-3 px-3">
+                    Category
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    React 
+                </th>
+                <td className="py-4 px-3">
+                    JSX
+                </td>
+                <td className="py-4 px-3">
+                    Admin
+                </td>
+            </tr>
+          
+      
+            <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    Nextjs
+                </th>
+                <td className="py-4 px-3">
+                    JSX
+                </td>
+                <td className="py-4 px-3 whitespace-nowrap">
+                    Web Application
+                </td>
+            </tr>
+       
+       
+        
+           
+            <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    React Native
+                </th>
+                <td className="py-4 px-3">
+                    JSX
+                </td>
+                <td className="py-4 px-3">
+                    Android-IOS
+                </td>
+            </tr>
+
+
+             
+            <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    Django
+                </th>
+                <td className="py-4 px-3">
+                    Python
+                </td>
+                <td className="py-4 px-3">
+                    BackEnd
+                </td>
+            </tr>
+           
+         
+
+         
+
+          
+
+         
+        </tbody>
+    </table>
+</div>
+
+
+        <div className='w-full border rounded mb-5'>
+            <Link href='/restaurant' >
+            <h1 className="text-white w-[100%]  flex justify-center text-center
+            bg-[#0f1a20b2] py-4">More Info</h1>
+            </Link>
+        </div>
+
+        </div>
 
 {/* crypto ......................................... */}
 <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 

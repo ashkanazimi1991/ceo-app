@@ -56,7 +56,7 @@ const Hero_clinic = () => {
           <button onClick={handleOpen}>
           <RiMenuUnfoldFill className='text-white text-2xl mx-4'/>
           </button>
-          <DrawerFront isOpen={isOpen} onClose={handleClose} />
+          <DrawerFront isOpen={isOpen} onClose={handleClose} />l
    </div>
    
    

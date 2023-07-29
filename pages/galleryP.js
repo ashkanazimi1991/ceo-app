@@ -16,6 +16,8 @@ import img5 from '../public/images/pet4.png'
 import img6 from '../public/images/fibex.png'
 import img7 from '../public/images/sssdd.png'
 import img8 from '../public/images/iot2.png'
+import img9 from '../public/images/fastfoodp.png'
+
 
 
 
@@ -35,7 +37,7 @@ const galleryP = () => {
     <div className="h-full  bg-[#07090aec] container">
     <Head>
      <title>CEO Project</title>
-     <meta name="description" content=" پروژه های برنامه نویسی" />
+     <meta name="description" content=" نمونه کارها" />
      <meta name="theme-color" content="#142028"/>
      <link rel="icon" href="/images/2.png" />
      <link rel='manifest' href='/manifest.json' />
@@ -60,120 +62,6 @@ const galleryP = () => {
      ">
                         
        
-
-
-
-{/* carnet......................................... */}
-        <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
-         items-center  rounded-xl">
-
-            <Model isVisible={showModel} onclose={() => setShowModal(false)}>
-               <video   className="w-[60%] sm:w-[100%] md:w-[70%]  " autoPlay loop  controls >
-                    <source   src="/video/carnet.mp4"   type="video/mp4"  />
-                    Your browser does not support the video tag.
-                </video>
-             </Model>
-             <div className=' relative top-48 pl-10 cursor-pointer items-center '>
-                        <button onClick={() => setShowModal(true)} className='w-20 h-20'>
-                        <FaPlayCircle  className="text-5xl animate-pulse bg-white rounded-full  text-[#dd0101]"/>
-                        </button>
-                    </div>
-
-         <h1 className="mt-4 text-2xl font-semibold text-gray-700 
-          ">استارت اپ کارنت</h1>
-            <Image  src={img2}  alt="carnet" width='350' height='350'
-                 className=" max-h-58   sm:w-[80%] w-[70%] object-contain "/>
-                 
-         <h2 className="mt-2 text-center text-gray-500">خدمات خودرو در محل شما</h2>
-
-<div className="   py-5 relative shadow-md sm:rounded-lg">
-    <table className="w-full text-sm text-center text-gray-400  ">
-        <thead className="text-xs text-gray-100 uppercase  border-x-2 ">
-            <tr>
-                <th scope="col" className="py-3 px-3">
-                    فریم ورک ها
-                </th>
-                <th scope="col" className="py-3 px-3">
-                زبان ها
-                </th>
-                <th scope="col" className="py-3 px-3">
-                    نرم افزارها
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-
-        <tr className=" border-b-2  border-gray-100">
-                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
-                    React 
-                </th>
-                <td className="py-4 px-3">
-                    جاوا اسکریپت 
-                </td>
-                <td className="py-4 px-3">
-                    ادمین پنل
-                </td>
-            </tr>
-          
-      
-            <tr className=" border-b-2  border-gray-100">
-                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
-                    Nextjs
-                </th>
-                <td className="py-4 px-3">
-                    جاوا اسکریپت
-                </td>
-                <td className="py-4 px-3">
-                    وب اپلیکیشن
-                </td>
-            </tr>
-       
-       
-        
-           
-            <tr className=" border-b-2  border-gray-100">
-                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
-                    React Native
-                </th>
-                <td className="py-4 px-3">
-                    جاوا اسکریپت
-                </td>
-                <td className="py-4 px-3">
-                    اندروید و ای او اس      
-                </td>
-            </tr>
-
-
-             
-            <tr className=" border-b-2  border-gray-100">
-                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
-                    Django
-                </th>
-                <td className="py-4 px-3">
-                    پایتون
-                </td>
-                <td className="py-4 px-3">
-                    بک اند
-                </td>
-            </tr>
-           
-         
-
-         
-
-          
-
-         
-        </tbody>
-    </table>
-</div>
-
-        <div className='w-full border rounded mb-5'>
-            <h className="text-white w-full flex justify-center text-center
-            bg-[#0f1a20b2] py-4">اطلاعات بیشتر</h>
-        </div>
-
-        </div>
 
 {/* pasteur....................
 ..........................
@@ -291,6 +179,120 @@ const galleryP = () => {
 
 
         </div>
+
+{/* carnet......................................... */}
+        <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+         items-center  rounded-xl">
+
+            <Model isVisible={showModel} onclose={() => setShowModal(false)}>
+               <video   className="w-[60%] sm:w-[100%] md:w-[70%]  " autoPlay loop  controls >
+                    <source   src="/video/carnet.mp4"   type="video/mp4"  />
+                    Your browser does not support the video tag.
+                </video>
+             </Model>
+             <div className=' relative top-48 pl-10 cursor-pointer items-center '>
+                        <button onClick={() => setShowModal(true)} className='w-20 h-20'>
+                        <FaPlayCircle  className="text-5xl animate-pulse bg-white rounded-full  text-[#dd0101]"/>
+                        </button>
+                    </div>
+
+         <h1 className="mt-4 text-2xl font-semibold text-gray-700 
+          ">استارت اپ کارنت</h1>
+            <Image  src={img2}  alt="carnet" width='350' height='350'
+                 className=" max-h-58   sm:w-[80%] w-[70%] object-contain "/>
+                 
+         <h2 className="mt-2 text-center text-gray-500">خدمات خودرو در محل شما</h2>
+
+<div className="   py-5 relative shadow-md sm:rounded-lg">
+    <table className="w-full text-sm text-center text-gray-400  ">
+        <thead className="text-xs text-gray-100 uppercase  border-x-2 ">
+            <tr>
+                <th scope="col" className="py-3 px-3">
+                    فریم ورک ها
+                </th>
+                <th scope="col" className="py-3 px-3">
+                زبان ها
+                </th>
+                <th scope="col" className="py-3 px-3">
+                    نرم افزارها
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    React 
+                </th>
+                <td className="py-4 px-3">
+                    جاوا اسکریپت 
+                </td>
+                <td className="py-4 px-3">
+                    ادمین پنل
+                </td>
+            </tr>
+          
+      
+            <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    Nextjs
+                </th>
+                <td className="py-4 px-3">
+                    جاوا اسکریپت
+                </td>
+                <td className="py-4 px-3">
+                    وب اپلیکیشن
+                </td>
+            </tr>
+       
+       
+        
+           
+            <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    React Native
+                </th>
+                <td className="py-4 px-3">
+                    جاوا اسکریپت
+                </td>
+                <td className="py-4 px-3">
+                    اندروید و ای او اس      
+                </td>
+            </tr>
+
+
+             
+            <tr className=" border-b-2  border-gray-100">
+                <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+                    Django
+                </th>
+                <td className="py-4 px-3">
+                    پایتون
+                </td>
+                <td className="py-4 px-3">
+                    بک اند
+                </td>
+            </tr>
+           
+         
+
+         
+
+          
+
+         
+        </tbody>
+    </table>
+</div>
+
+        <div className='w-full border rounded mb-5'>
+            <h className="text-white w-full flex justify-center text-center
+            bg-[#0f1a20b2] py-4">اطلاعات بیشتر</h>
+        </div>
+
+        </div>
+
+
 
 
 
@@ -523,6 +525,122 @@ const galleryP = () => {
             <Link href='/mypetP' >
             <h className="text-white w-[100%]  flex justify-center text-center
             bg-[#0f1a20b2] py-4">اطلاعات بیشتر</h>
+            </Link>
+        </div>
+
+        </div>
+
+
+        {/* Food......................................... */}
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+         items-center  rounded-xl">
+
+            <Model isVisible={showModel4} onclose={() => setShowModal4(false)}>
+            <video   className="w-[60%] sm:w-[100%] md:w-[70%]  " autoPlay loop  controls >
+                    <source   src="/video/"   type="video/mp4"  />
+                    Your browser does not support the video tag.
+                </video>
+             </Model>
+             <div className=' relative top-48 pl-10 cursor-pointer items-center '>
+                        <button onClick={() => setShowModal4(true)} className='w-20 h-20'>
+                        <FaPlayCircle  className="text-5xl animate-pulse  text-[#dd0101]"/>
+                        </button>
+                    </div>
+
+         <h1 className="mt-4 text-center text-2xl font-semibold text-gray-700 
+          ">رستوران و فست فود  </h1>
+            <Image  src={img9}  alt="carnet" width='350' height='350'
+                 className=" max-h-58 my-8   sm:w-[80%] w-[70%] object-contain "/>
+                 
+         <h2 className="mt-2 text-gray-500 text-center"> نرم افزار های معرفی و ارائه خدمات اختصاصی </h2>
+
+<div className="   py-5 relative shadow-md sm:rounded-lg">
+    <table className="w-full text-sm text-left text-gray-400  ">
+    <thead className="text-xs text-gray-100 uppercase  border-x-2 ">
+            <tr>
+                <th scope="col" className="py-3 px-3">
+                    فریم ورک ها
+                </th>
+                <th scope="col" className="py-3 px-3">
+                زبان ها
+                </th>
+                <th scope="col" className="py-3 px-3">
+                    نرم افزارها
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+<tr className=" border-b-2  border-gray-100">
+        <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+            React 
+        </th>
+        <td className="py-4 px-3 text-center">
+            جاوا اسکریپت 
+        </td>
+        <td className="py-4 px-3">
+            ادمین پنل
+        </td>
+    </tr>
+  
+
+    <tr className=" border-b-2  border-gray-100">
+        <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+            Nextjs
+        </th>
+        <td className="py-4 px-3 text-center">
+            جاوا اسکریپت
+        </td>
+        <td className="py-4 px-3">
+            وب اپلیکیشن
+        </td>
+    </tr>
+
+
+
+   
+    <tr className=" border-b-2  border-gray-100">
+        <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+            React Native
+        </th>
+        <td className="py-4 px-3 text-center">
+            جاوا اسکریپت
+        </td>
+        <td className="py-4 px-3">
+            اندروید و ای او اس      
+        </td>
+    </tr>
+
+
+     
+    <tr className=" border-b-2  border-gray-100">
+        <th scope="row" className="py-4 px-6 font-medium text-gray-100 whitespace-nowrap dark:text-white">
+            Django
+        </th>
+        <td className="py-4 px-3">
+            پایتون
+        </td>
+        <td className="py-4 px-3">
+            بک اند
+        </td>
+    </tr>
+   
+ 
+
+ 
+
+  
+
+ 
+</tbody>
+    </table>
+</div>
+
+
+        <div className='w-full border rounded mb-5'>
+            <Link href='/restaurant' >
+            <h1 className="text-white w-[100%]  flex justify-center text-center
+            bg-[#0f1a20b2] py-4">اطلاعات بیشتر</h1>
             </Link>
         </div>
 

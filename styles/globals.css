@@ -31,19 +31,19 @@ body {
 }
 
 body {
-  background: #eee;
+  /* background: #eee;
   
   font-size: 14px;
-  color: #000;
+  color: #000; */
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #fff;
+  /* background: #fff;
  
 
-  color: #000;
+  color: #000; */
   margin: 0;
   padding: 0;
 }
@@ -69,9 +69,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 18px;
+  /* border-radius: 18px;
 
-  color: #fff;
+  color: #fff; */
 }
 
 

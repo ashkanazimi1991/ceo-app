@@ -1,6 +1,8 @@
 import Hero from "../components/Hero/Hero";
 import Head from 'next/head';
 import dynamic from "next/dynamic";
+// import Polar from "../components/SmartSchool/Polar";
+// import Polygon from "../components/SmartSchool/Polygon";
 // import Raychat from "../components/Raychat ";
 // import { registerLicense } from '@syncfusion/ej2-base';
 
@@ -21,12 +23,13 @@ export default function Home() {
         <link rel='manifest' href='/manifest.json' />  
       </Head>
       <div className="flex flex-col">
-        <Hero/>
+      <Hero/>
       <SoftwareDevelopment/>
       <Gig/>
       <WhyE/>
 
-    
+    {/* <Polygon/> */}
+    {/* <Polar/> */}
       </div>
 
       
