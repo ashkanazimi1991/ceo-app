@@ -60,11 +60,11 @@ const Team = () => {
                          src="/images/sajjad.jpg" alt="اشکان عظیمی " 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
-                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
-                         group-hover:text-white">Sajjad Abajali</h1>
+                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize
+                         dark:text-white text-center     group-hover:text-white">Sajjad Abajali</h1>
                         
                         <h2 className="mt-2 text-gray-500 capitalize dark:text-gray-300
-                         group-hover:text-gray-300">Turkey's CEO Department </h2>
+                         group-hover:text-gray-300 text-center" >Turkey's CEO Department </h2>
                         
                         <div className="flex mt-3 -mx-2">
                             <Link href='tel:+905528258841'>

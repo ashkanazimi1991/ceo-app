@@ -64,10 +64,87 @@ const drappPersian = () => {
 
       <div className='grid grid-cols-2 xl:grid-cols-1 gap-6 mt-[10%] mx-[10%] md:mx-4  my-4'>
        
+      <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی مراکز درمانی</p>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+         
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr/dr_department' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
         
+          </div>
+        </div>
 
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع مطب</p>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی مطب</p>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+         
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr_front' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
+        
+          </div>
+        </div>
+
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 sm:text-sm py-4 border-b-2 border-gray-700'>پلتفرم جامع و اختصاصی کلینیک های دندان پزشکی</p>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+         
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='/dr_front' >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
+        
+          </div>
+        </div>
+
+
+        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
+          <p className='text-white text-center  text-md sm:px-2 sm:text-sm  py-4 border-b-2 border-gray-700'>پلتفرم جامع و اختصاصی کلینیک های زیبایی</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -93,7 +170,7 @@ const drappPersian = () => {
         </div>
   
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع کلینیک</p>
+          <p className='text-white text-center  text-md sm:px-2 sm:text-sm  py-4 border-b-2 border-gray-700'>  پلتفرم جامع و اختصاصی کلینیک روانشناسی</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -119,7 +196,7 @@ const drappPersian = () => {
         </div>
 
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع ساختمان پزشکان</p>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی ساختمان پزشکان</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -131,7 +208,7 @@ const drappPersian = () => {
            </div>
            </Link>
 
-           <Link href='/dr_front' >
+           <Link href='/dr/dr_department' >
            <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
              rounded items-center  ' >
             <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
@@ -145,7 +222,7 @@ const drappPersian = () => {
         </div>
 
         <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 border-gray-700'>پلتفرم جامع ساختمان بیمارستان </p>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی بیمارستان </p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -157,7 +234,7 @@ const drappPersian = () => {
            </div>
            </Link>
 
-           <Link href='/dr_front' >
+           <Link href='/dr/dr_department' >
            <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
              rounded items-center  ' >
             <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>

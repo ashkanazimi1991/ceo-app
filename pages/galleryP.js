@@ -286,8 +286,8 @@ const galleryP = () => {
 </div>
 
         <div className='w-full border rounded mb-5'>
-            <h className="text-white w-full flex justify-center text-center
-            bg-[#0f1a20b2] py-4">اطلاعات بیشتر</h>
+            <h2 className="text-white w-full flex justify-center text-center
+            bg-[#0f1a20b2] py-4">اطلاعات بیشتر</h2>
         </div>
 
         </div>

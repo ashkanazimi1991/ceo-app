@@ -37,8 +37,8 @@ const Faq = () => {
    
     <div className=' px-[15%] md:px-[2%] space-x-4 md:space-x-0 md:space-y-4 flex md:flex-col w-full pb-9'>
 
-      <div className=' w-1/2 md:w-full '>
-   <SliderP/>
+      <div className=' w-1/2 md:w-full   '>
+         <SliderP/>
       </div>
 
       <div className=' w-1/2  md:w-full'>

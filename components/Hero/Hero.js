@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Navbar from '../Navbar/Navbar';
 import Image from 'next/image';
 import SliderOne from '../cardslider/sliderone';
-
+// import Map from '../Map/Map'
 
 
 // import dynamic from "next/dynamic";
@@ -114,6 +114,7 @@ function Hero() {
         {/* main right div */}
         <div className='w-4/6 h-full flex flex-col  md:w-screen sm:hidden
          bg-[#0000003d] '>
+          {/* <Map/> */}
         </div>
       </div>
     

@@ -13,14 +13,18 @@ function HeroPersian() {
   return (
     <div className='w-full h-screen bg-[#000000a8]'>
 
-            <Image
-             className=" fixed -z-20  w-[100%] md:w-full object-cover h-full 
+<Image
+             className=" fixed -z-20  w-[100%] md:w-screen object-cover h-full 
               opacity-100 sm:opacity-100"
              src="/images/bb.webp"
-             alt="CEO"
              width='1200'
              height='800'
+             alt="CEO"
             />
+{/* <video   autoPlay loop muted  className="fixed -z-10 object-cover  w-screen h-screen "  >
+             <source   src="/video/heroP.mp4"   type="video/mp4"  />
+                Your browser does not support the video tag.
+            </video> */}
       
       <div className='flex  flex-row-reverse md:flex-col w-full min-h-screen'>
         {/*  main left div............................................................................................

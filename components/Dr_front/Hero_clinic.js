@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { RiMenuUnfoldFill, RiHome2Line } from 'react-icons/ri';
 import { BsCalendarDate } from 'react-icons/bs';
 import { FiLogIn } from 'react-icons/fi';
+import CalendarS from '../Calendar/CalendarS'
 
 
 
@@ -56,21 +57,22 @@ const Hero_clinic = () => {
           <button onClick={handleOpen}>
           <RiMenuUnfoldFill className='text-white text-2xl mx-4'/>
           </button>
-          <DrawerFront isOpen={isOpen} onClose={handleClose} />l
+          <DrawerFront isOpen={isOpen} onClose={handleClose} />
    </div>
    
    
     
     </div> 
     
-
     
 
 </div>
 </div>
+  
         {/* /menu */}
-        <div className='flex flex-row-reverse px-[10%] lg:px-[5%] md:px-[2%] md:flex-col-reverse py-[8%] md:pt-20 '>
+        <div className='flex flex-col px-[10%] lg:px-[5%] md:px-[2%] md:flex-col-reverse py-[8%] md:pt-20 '>
           
+    
           <div className=' w-full flex   flex-col justify-center items-center  px-[2%]  md:w-full '>
          <div className='flex  w-full items-center justify-center  py-2 '>
             <p className='  whitespace-nowrap text-right w-full text-2xl  text-blue-100 '>
@@ -113,6 +115,7 @@ const Hero_clinic = () => {
         
         </div>
         </div>
+        <CalendarS/>
     </div>
   )
 }
