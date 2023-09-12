@@ -41,7 +41,7 @@ export default class Hero_Slider02 extends Component {
           }},{
           breakpoint: 480,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 2,
             infinite: true,
             dots: false,

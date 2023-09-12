@@ -40,7 +40,7 @@ const Body = () => {
                 </button>
               </Link>
          </div>
-        <div className='bg-blue-400 rounded-xl p-1'>
+        <div className=' rounded-xl '>
              <BA_Slider/>
         </div>
 
@@ -237,33 +237,7 @@ const Body = () => {
     </div>  
         
 {/* .................................................................. */}          
-<div className='relative  row-span-3 bg-slate rounded-xl transition delay-150  duration-500 h-96
-    hover:scale-110 scale-100 brightness-75 hover:brightness-100  border-4 shadow-2xl hover:z-10'>
-    <Image src='/images/dr06.jpg' width='400' height='600' alt='نرم افزار کلینیک'  className='rounded-md    w-full h-full drop-shadow-2xl  object-cover'/>
 
-    <Link href='/doctors/Drrad' >             
-        <button className='w-full h-3/6 space-y-2 absolute bottom-0 bg-[#07181fa9]  rounded-xl' >
-        <h1 className='text-sm text-center pt-1   text-gray-100'>فرزاد راد: متخصص مغز و اعصاب</h1>
-       
-       <div className='flex w-full md:flex-col sm:justify-center items-center justify-around px-2 '>
-            <div className='flex justify-center items-center py-1  w-full space-x-1'>
-                <FiStar className='text-yellow-500'/>
-                <FiStar className='text-yellow-500'/>
-                <FiStar className='text-yellow-500'/>
-                <FiStar className='text-yellow-500'/>
-                <FiStar className='text-gray-500'/>
-
-            </div>
-          
-       </div>
-        <div className='flex w-full justify-around  '>
-            <p className='text-sm  text-right px-2   text-gray-100'>ثبت نوبت </p> 
-            <p className=' text-sm text-right px-2   text-gray-100'>رزومه  </p> 
-       </div>
-
-        </button>   
-    </Link>   
-    </div>
 
 {/* .................................................................. */}      
 <div className='relative  row-span-3 bg-slate rounded-xl transition delay-150  duration-500 h-96

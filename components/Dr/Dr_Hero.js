@@ -20,13 +20,16 @@ const Dr_Hero = () => {
        <div className='fixed top-0 -z-10'>
          <video   autoPlay loop muted  className="fixed -z-10 object-cover  w-full h-screen "  >
              <source   src="/video/v04.mp4"   type="video/mp4"  />
+             <meta name="apple-mobile-web-app-capable" content="yes">
+
+             </meta>
                 Your browser does not support the video tag.
             </video>        
           </div>
 <div className='flex  h-full  w-full flex-col space-y-8 justify-center items-center  '>
     
-    <p className='text-gray-200 pt-[14%] sm:pt-[25%] sm:text-sm text-md '>کلینیک و ساختمان پزشکان پاستور</p>
-    <p className='text-gray-400 text-xs'>ارائه دهنده خدمات تخصصی درمانی</p>
+    <p className='text-gray-200 pt-[14%] sm:pt-[25%]  text-md '>کلینیک و ساختمان پزشکان پاستور</p>
+    <p className='text-gray-300 text-sm'>ارائه دهنده خدمات تخصصی درمانی</p>
 
 
 

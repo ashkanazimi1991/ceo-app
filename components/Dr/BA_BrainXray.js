@@ -144,7 +144,7 @@ export const CustomHandle2 = ({ style, ...props }) => {
   );
 };
 
-export const BA_Slider = () => (
+export const BA_BrainXray = () => (
   <div>
 
 
@@ -177,4 +177,4 @@ export const BA_Slider = () => (
     <CustomHandle position={50} /> */}
   </div>
 );
-export default BA_Slider
+export default BA_BrainXray;
