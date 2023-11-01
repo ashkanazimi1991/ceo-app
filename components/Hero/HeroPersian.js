@@ -2,99 +2,71 @@ import React from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
 import SliderOne from '../cardslider/sliderone';
-import Navbar from '../Navbar/Navbar';
+// import Navbar from '../Navbar/Navbar';
 import img2 from '../../public/images/2.png'
 import img3 from '../../public/images/96.png'
 import img4 from '../../public/images/dd.png'
 // import HeroSlider from '../Hero/HeroSlider'
+import Header from '../Header/Header';
 
 
 function HeroPersian() {
   return (
-    <div className='w-full h-screen bg-[#000000a8]'>
+    <div className='w-full h-screen  '>
+
+      <Header/>
+        
 
 <Image
-             className=" fixed -z-20  w-[100%] md:w-screen object-cover h-full 
-              opacity-100 sm:opacity-100"
-             src="/images/bb.webp"
-             width='1200'
-             height='800'
-             alt="CEO"
+             className=" fixed -z-20 o  object-cover h-screen "
+             src="/images/HeroSpace.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
             />
-{/* <video   autoPlay loop muted  className="fixed -z-10 object-cover  w-screen h-screen "  >
-             <source   src="/video/heroP.mp4"   type="video/mp4"  />
-                Your browser does not support the video tag.
-            </video> */}
+
+<Image
+             className=" fixed -z-10  animate-pulse bottom-0 object-contain  "
+             src="/images/spaceStart.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
       
-      <div className='flex  flex-row-reverse md:flex-col w-full min-h-screen'>
-        {/*  main left div............................................................................................
-        ............................................................................................................. */}
-
-        <div className='w-2/6 md:w-screen h-screen'>
-          {/* top div................................................................................................. */}
-          <div className='flex flex-col h-2/5 '>
-
-            {/* logo */}
-            <div className='flex flex-col justify-center p-5 bg-[#040f14e1] w-full h-[100%]'>
-                 <Image  src={img2}  alt="logo" width='150' height='150'
-                 className=" max-h-32 lg:max-h-20 md:max-h-32 w-[100%] object-contain "/>
-                 <h1 className='text-gray-400 text-xl 2xl:text-lg  font-bold 
-                 text-center'>CEO Developers Community</h1>
-            </div>
-           {/* button col */}
-            <div className='flex justify-center '>
-            <div className='bg-[#1c5f7b] w-[100%] h-full'>
-                      <Image  src={img3} height='50' width='50' alt="onlin ceo" 
-                      className=" max-h-20 p-6 sm:p-3  sm:max-h-16 w-[100%] object-contain  "/>   
-                    <div className='flex  md:flex-row justify-center '>
-                        <h1 className='text-center pb-2 text-white text-lg drop-shadow-4xl'>
-                         توسعه وب</h1>       
-                    </div>
-                    
-                </div>
-
-                <div className='bg-gray-600 w-[100%] h-full'>
-                <Image  src={img4} height='50' width='50' alt="onlin ceo" 
-                className=" max-h-20 p-6 sm:p-3  sm:max-h-16 w-[100%] object-contain  "/> 
-                      <div className='flex flex-row lg:flex-col md:flex-row justify-center '>
-                        <h1  className='text-center pb-2 text-white text-lg drop-shadow-4xl'>
-                        توسعه نرم افزار </h1>
-                       
-                    </div>
-                    
-                </div>
-
-            </div>
-        </div>
-
-
-          {/* bottom div ............................................................................................... */}
-              <div className='flex flex-col justify-around pt-[5%] bg-[#040f14e1] h-3/5 '>
-                  <div className=' px-[0%] '>
-                     <h1 className='text-white   text-right pr-8 lg:pr-6
-                      text-2xl  pt-10 '>
-                        خوش آمدید</h1>
+      
+      <div className=' w-full  flex flex-col justify-center h-screen '>
+       
+              <div className='flex flex-col justify-center  h-full   '>
+                  <div className='  '>
+                  <h1 className='text-gray-200 text-5xl md:text-2xl  font-bold 
+                 text-center'>ONLINE CEO <br></br> Developers Community</h1>
                       
-                      <p className='text-[#999999] leading-10 text-right text-sm py-4 sm:pt-5 px-[5%] '>
+                      <p className='text-[#999999] leading-10 text-center text-sm py-4 sm:pt-5 px-[5%] '>
                          مدیریت آنلاین اجرا کننده پلتفرم های یکپارچه برای 
                         ایده های استارت آپی , کسب و کار و اتوماسیون ها     
                       </p>
                   </div>
 
+                    {/* button col */}
+            
+
                   <div className='flex  justify-center w-full'>
                     <Link href="/contactUsPersian">
-                      <h1 className='text-gray-400 border px-5 py-2 rounded mr-5'>
-                        ارتباط با ما</h1>
+                      <div className=' shadow-2xl shadow-[#994dacbe] bg-[#3e1a6e44] mr-2 rounded-lg'>
+                      <h3 className='text-gray-100 animate-bounce    shadow-slate-100 px-5 py-2  '>
+
+                           مشاوره رایگان </h3>
+
+                      </div>
                     </Link>
-                    <Link href="/galleryP">
-                          <h1 className='text-[#4ca8cc] pl-2 border rounded  px-5 py-2'>مشاهده پروژه ها</h1>
+                    <Link href="/galleryP" >
+                    <h3 className='text-[#4ca8cc]  shadow-xl bg-[#00000044] text-center  animate-pulse rounded-lg  px-5 py-2'>مشاهده پروژه ها</h3>
                     </Link>
                   </div>
 
+            </div>
 
-            
-
-      <div className=' relative bottom-0'>
+      <div className='  bottom-0'>
           <SliderOne   
           img1='/images/js.png' img2='/images/python.png' img3='/images/c++.png' img4='/images/android.png' img5='/images/apple.png' img6='/images/windos.png'
           img7='/images/arduino.png' img8='/images/RaspberryPi.png' img9='/images/react.png' img10='/images/dj.png'
@@ -102,23 +74,10 @@ function HeroPersian() {
           />
             
       </div>
-        <div className='z-20 ' >
-          <Navbar/>
-        </div>
-            </div>
-
                   
         </div>
         
-        {/* main right div */}
-        <div className='w-4/6  flex flex-col justify-center items-center  md:w-screen sm:hidden
-         bg-[#0000003d] '>
-          <div  className=' w-full'>
-            {/* <HeroSlider/> */}
-
-          </div>
-        </div>
-      </div>
+  
     
     
 

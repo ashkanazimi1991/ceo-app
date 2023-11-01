@@ -8,7 +8,7 @@ const Acordion = ({open, toggle, img, alt, title, desc}) => {
   return (
     <div className=' container  sm:px-[1%] px-[10%]  ' >
         <div className=' border-2  border-gray-700 
-         bg-[#000000b4] py-6 px-[5%]  flex mb-3 rounded justify-between 
+          py-6 px-[5%]  flex mb-3 rounded justify-between 
          items-center  crusor-pointer'
         onClick={toggle}>
             <h1 className=' text-white'> {title} </h1>

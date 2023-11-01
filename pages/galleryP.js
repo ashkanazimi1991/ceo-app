@@ -34,10 +34,10 @@ const galleryP = () => {
 
 
   return (
-    <div className="h-full  bg-[#07090aec] container">
+    <div className="h-full  container">
     <Head>
      <title>CEO Project</title>
-     <meta name="description" content=" نمونه کارها" />
+     <meta name="description" content="  مجموعه مدیریت آنلاین" />
      <meta name="theme-color" content="#142028"/>
      <link rel="icon" href="/images/2.png" />
      <link rel='manifest' href='/manifest.json' />
@@ -50,14 +50,21 @@ const galleryP = () => {
     cursor-pointer'/>
    </Link>
    <Image
-        className=" fixed -z-20  w-[100%] md:w-screen object-cover h-full 
-        opacity-100 sm:opacity-100"
-        src="/images/bb.webp"
-        width='1200'
-        height='800'
-        alt="CEO"/>
+             className=" fixed -z-20 o  object-cover h-screen "
+             src="/images/HeroSpace.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+      <Image
+             className=" fixed -z-10  animate-pulse bottom-0 object-contain  "
+             src="/images/spaceStart.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
 
-    <div className=" h-full grid   bg-[#07090a15] px-[5%]  grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 py-[5%]  gap-8 
+    <div className=" h-full grid   px-[5%]  grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 py-[5%]  gap-8 
    
      ">
                         
@@ -67,7 +74,7 @@ const galleryP = () => {
 ..........................
 .......................................
 .............................................................. */}
-  <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+  <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel2} onclose={() => setShowModal2(false)}>
@@ -181,7 +188,7 @@ const galleryP = () => {
         </div>
 
 {/* carnet......................................... */}
-        <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+        <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel} onclose={() => setShowModal(false)}>
@@ -297,7 +304,7 @@ const galleryP = () => {
 
 
 {/* FastSchool......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel3} onclose={() => setShowModal3(false)}>
@@ -416,7 +423,7 @@ const galleryP = () => {
 
 
 {/* mypet......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel4} onclose={() => setShowModal4(false)}>
@@ -532,7 +539,7 @@ const galleryP = () => {
 
 
         {/* Food......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel4} onclose={() => setShowModal4(false)}>
@@ -648,7 +655,7 @@ const galleryP = () => {
 
 
 {/* crypto ......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel5} onclose={() => setShowModal5(false)}>
@@ -764,7 +771,7 @@ const galleryP = () => {
 
 
 {/* Shops ......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel6} onclose={() => setShowModal6(false)}>
@@ -884,7 +891,7 @@ const galleryP = () => {
 
         
 {/* iot ......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center  bg-[#07090aec]
          items-center  rounded-xl">
 
             <Model isVisible={showModel6} onclose={() => setShowModal6(false)}>

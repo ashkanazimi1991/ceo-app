@@ -34,7 +34,7 @@ const gallery = () => {
 
 
   return (
-    <div className="h-full bg-[#07090aec] container">
+    <div className="h-full container">
     <Head>
      <title>CEO Project</title>
      <meta name="description" content="برنامه نویسی" />
@@ -43,19 +43,27 @@ const gallery = () => {
      <link rel='manifest' href='/manifest.json' />
    </Head>
    <div className="w-full ">
+   <Image
+             className=" fixed -z-20 o  object-cover h-screen "
+             src="/images/HeroSpace.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+      <Image
+             className=" fixed -z-10  animate-pulse bottom-0 object-contain  "
+             src="/images/spaceStart.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
 
    <Link href='/' >
    <BsArrowLeft className='fixed z-20 bg-[#1E9F93] p-1 ring-white ring-2 
     rounded-full  my-4 ml-6  sm:text-3xl text-5xl text-[#fff]
     cursor-pointer'/>
    </Link>
-   <Image
-        className=" fixed -z-20  w-[100%] md:w-full object-cover h-full 
-        opacity-100 sm:opacity-100"
-        src="/images/bb.webp"
-        width='1200'
-        height='800'
-        alt="CEO"/>
+
 
     <div className="w-full h-full grid   bg-[#07090a15] px-[5%]  grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 py-[5%]  gap-8 
    
@@ -66,7 +74,7 @@ const gallery = () => {
 
 
 {/* carnet......................................... */}
-        <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+        <div className="flex flex-col border border-gray-700 px-16 sm:px-6 bg-[#07090aec]  justify-center 
          items-center  rounded-xl">
 
             <Model isVisible={showModel} onclose={() => setShowModal(false)}>
@@ -181,7 +189,7 @@ const gallery = () => {
 ..........................
 .......................................
 .............................................................. */}
-  <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+  <div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center bg-[#07090aec] 
          items-center  rounded-xl">
 
             <Model isVisible={showModel2} onclose={() => setShowModal2(false)}>
@@ -297,7 +305,7 @@ const gallery = () => {
 
 
 {/* FastSchool......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center bg-[#07090aec] 
          items-center  rounded-xl">
 
             <Model isVisible={showModel3} onclose={() => setShowModal3(false)}>
@@ -410,7 +418,7 @@ const gallery = () => {
 
 
 {/* mypet......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center bg-[#07090aec] 
          items-center  rounded-xl">
 
             <Model isVisible={showModel4} onclose={() => setShowModal4(false)}>
@@ -526,7 +534,7 @@ const gallery = () => {
 
 
 {/* Food......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center bg-[#07090aec] 
          items-center  rounded-xl">
 
             <Model isVisible={showModel4} onclose={() => setShowModal4(false)}>
@@ -641,7 +649,7 @@ const gallery = () => {
         </div>
 
 {/* crypto ......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center bg-[#07090aec] 
          items-center  rounded-xl">
 
             <Model isVisible={showModel5} onclose={() => setShowModal5(false)}>
@@ -757,7 +765,7 @@ const gallery = () => {
 
 
 {/* Shops ......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center bg-[#07090aec] 
          items-center  rounded-xl">
 
             <Model isVisible={showModel6} onclose={() => setShowModal6(false)}>
@@ -870,7 +878,7 @@ const gallery = () => {
 
         
 {/* iot ......................................... */}
-<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center 
+<div className="flex flex-col border border-gray-700 px-16 sm:px-6 justify-center bg-[#07090aec] 
          items-center  rounded-xl">
 
             <Model isVisible={showModel6} onclose={() => setShowModal6(false)}>

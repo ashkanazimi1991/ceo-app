@@ -35,13 +35,13 @@ const theme= extendTheme({fonts})
 
 function GigT() {
   return (
-      <div className='flex flex-col min-h-screen w-full bg-[#000000b4]'>
+      <div className='flex flex-col min-h-screen w-full bg-gradient-to-b from-transparent to-[#07090aec]'>
      <ChakraProvider theme={theme}>
     <h1 className='text-white text-xl border-y-2 text-center py-4'>Satılık Projeler</h1>
     
     <div className="w-full h-full grid   bg-[#07090a15] px-[5%]  grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 py-[5%]  gap-8 ">
   
-        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-[#000000c4]'>
+        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-gradient-to-b from-transparent to-[#07090aec]'>
                   <Image  src={img1}  alt="logo" width='600' height='600'
                  className=" w-[100%] object-contain "/>
             <h2 className='text-white px-5'>Kişisel Portföy Webapp (Web Sitesi)</h2>
@@ -365,7 +365,7 @@ function GigT() {
            
         </div>
 {/* .....................nextone........................................ */}
-<div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-[#000000c4]'>
+<div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-gradient-to-b from-transparent to-[#07090aec]'>
                   <Image  src={img2}  alt="logo" width='600' height='600'
                  className=" w-[100%] object-contain "/>
             <h2 className='text-white px-5'>Özel Çevrimiçi Mağaza</h2>
@@ -710,7 +710,7 @@ function GigT() {
 
         {/* ............................................ */}
 
-        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-[#000000c4]'>
+        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-gradient-to-b from-transparent to-[#07090aec]'>
                   <Image  src={img3}  alt="logo" width='600' height='600'
                  className=" w-[100%] object-contain "/>
             <h2 className='text-white px-5'>Özel fast food ve restoran uygulaması</h2>
@@ -1056,7 +1056,7 @@ function GigT() {
         {/* ............................................. */}
 
 
-        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-[#000000c4]'>
+        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-gradient-to-b from-transparent to-[#07090aec]'>
                   <Image  src={img4}  alt="logo" width='600' height='600'
                  className=" w-[100%] object-contain "/>
             <h2 className='text-white px-5'>Özel emlak uygulaması (web sitesi)</h2>
@@ -1401,7 +1401,7 @@ function GigT() {
         {/* ................................................ */}
 
 
-        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-[#000000c4]'>
+        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-gradient-to-b from-transparent to-[#07090aec]'>
                   <Image  src={img5}  alt="logo" width='600' height='600'
                  className=" w-[100%] object-contain "/>
             <h2 className='text-white px-5'>Özel Doktor ve yaşam bakımı uygulaması (web sitesi)</h2>
@@ -1745,7 +1745,7 @@ function GigT() {
         </div>
 
         {/* ............................................ */}
-        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-[#000000c4]'>
+        <div className='border-gray-800 border rounded-xl py-5 w-full h-full bg-gradient-to-b from-transparent to-[#07090aec]'>
                   <Image  src={img6}  alt="logo" width='600' height='600'
                  className=" w-[100%] object-contain "/>
             <h2 className='text-white px-5'>Özel Eğitim uygulaması (web sitesi)</h2>

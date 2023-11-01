@@ -10,14 +10,14 @@ export default class SliderOne extends Component {
     const settings = {
       autoplay:true,
       infinite: true,
-      slidesToShow: 6,
-      speed: 500,
+      slidesToShow: 5,
+      speed: 3000,
       responsive: [
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: 5,
-            slidesToScroll: 1,
+            slidesToShow: 4,
+            slidesToScroll: 5,
             infinite: true,
             dots: false,
           }},
@@ -25,21 +25,21 @@ export default class SliderOne extends Component {
           breakpoint: 1100,
           settings: {
             slidesToShow: 5,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             infinite: true,
             dots: false,
           }},{
           breakpoint: 768,
           settings: {
             slidesToShow: 5,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
             infinite: true,
             dots: false,
           }},{
           breakpoint: 480,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             infinite: true,
             dots: false,
           },
@@ -47,7 +47,7 @@ export default class SliderOne extends Component {
       ],
     };
     return (
-      <div className="container w-full overflow-hidden">
+      <div className="container w-full overflow-hidden px-[10%] ">
         <Slider {...settings}>
           <div >
             <div className="flex">
@@ -58,14 +58,14 @@ export default class SliderOne extends Component {
          
           <div>
             <div className="flex">
-            <Image height='50' width='50'  className="flex w-24 justify-center  p-4 " src={this.props.img2} alt="رباتیک" />
+            <Image height='50' width='50'  className="flex w-24 justify-center  p-4 " src={this.props.img2} alt="onlineceo" />
             </div>
              
           </div>
 
           <div>
             <div className="flex">
-            <Image height='50' width='50'  className="flex w-24 justify-center  p-4 " src={this.props.img3} alt="اینترنت اشیا" />
+            <Image height='50' width='50'  className="flex w-24 justify-center  p-4 " src={this.props.img3} alt="onlineceo" />
             </div>
          
           </div>

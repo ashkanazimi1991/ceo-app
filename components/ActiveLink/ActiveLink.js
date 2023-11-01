@@ -8,8 +8,8 @@ function ActiveLink({ children, href }) {
   const router = useRouter()
   const style = {
     marginRight: 10,
-    color: router.asPath === href ? '#fff' : '#404258',
-    backgroundColor: router.asPath === href ? '#040f1491' : '#040f1491',
+    color: router.asPath === href ? '' : '',
+    backgroundColor: router.asPath === href ? '' : '',
     width: '100%',
     // paddingRight:'18px'
   }

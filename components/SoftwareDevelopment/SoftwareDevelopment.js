@@ -112,25 +112,24 @@ export default function SoftwareDevelopment() {
 
 
   return (
-    <div className='min-h-screen flex flex-col md:max-h-full  sm:flex-col w-full'>
+    <div className='min-h-screen flex flex-col  md:max-h-full  sm:flex-col w-full'>
       
         {/* left............................... */}
 
-        <div className='flex flex-col justify-between   container w-full 
-        md:w-full bg-[#000000b4] '>
+        <div className='flex flex-col justify-between   container w-full  '>
 
   <Link href="/gallery">
-   <div className='bg-[#0f1a20f6] items-center flex w-full border-y-2 justify-around'>
+   <div className=' items-center flex  w-full border-y-2 justify-around md:px-[4%] px-[10%]'>
       
-             <h1 className= 'py-4  text-[#4ca8cc] text-center text-2xl sm:text-sm whitespace-nowrap px-2'>
+             <h3 className= 'py-4  text-[#4ca8cc] text-center text-2xl sm:text-sm whitespace-nowrap px-2'>
               SoftWare Development
-            </h1>
+            </h3>
            
 
            <div className='grid  grid-cols-3  w-3/6  '>
-            <h1 className= ' text-white text-center sm:text-sm px-4 whitespace-nowrap'> Android </h1>
-            <h1 className= ' text-white text-center sm:text-sm px-4  whitespace-nowrap'> IOS </h1>
-            <h1 className= ' text-white text-center sm:text-sm px-4 whitespace-nowrap '> Web </h1>
+            <h3 className= ' text-white text-center sm:text-sm px-4 whitespace-nowrap'> Android </h3>
+            <h3 className= ' text-white text-center sm:text-sm px-4  whitespace-nowrap'> IOS </h3>
+            <h3 className= ' text-white text-center sm:text-sm px-4 whitespace-nowrap '> Web </h3>
           </div>
           </div>
   </Link>
@@ -138,8 +137,8 @@ export default function SoftwareDevelopment() {
 
          
 
-          <div className='flex pt-4 flex-col min-h-[450px] bg-[#000000a8] justify-center'>
-          <p className='text-gray-400 text-center py-6'>Dedicated web and mobile user interfaces, based on JavaScript and global UI and UX standards  </p>
+          <div className='flex pt-4 flex-col min-h-[450px] bg-[#00000070] justify-center'>
+          <p className='text-gray-400 text-center px-4 py-6'>Dedicated web and mobile user interfaces, based on JavaScript and global UI and UX standards  </p>
             <Slider2   
             img1='/images/1.png' img2='/images/cat.png' 
             img3='/images/3.png' img4='/images/fibex2.png'
@@ -149,7 +148,7 @@ export default function SoftwareDevelopment() {
           />
 
 
-            <p className='text-gray-400 text-center py-6'> Live research of management departments in comprehensive and exclusive dashboards with Python programming language </p>
+            <p className='text-gray-400 text-center px-4 py-6'> Live research of management departments in comprehensive and exclusive dashboards with Python programming language </p>
 
             {/* <SliderMainE/> */}
           </div>
@@ -167,7 +166,7 @@ export default function SoftwareDevelopment() {
 
         {/* right............................. */}
        {/* acordion................................................. */}     
-      <div className="w-full h-full bg-[#000000c5]">
+      <div className="w-full h-full bg-[#00000070]">
             <div className='flex justify-around w-full py-6 flex-row'>
                 <h1 className='text-left w-1/2  text-gray-400 tracking-widest  text-xl md:text-lg '>  
                   {/* <span>{text}</span> */}

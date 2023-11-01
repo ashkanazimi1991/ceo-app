@@ -105,17 +105,27 @@ export default function SoftwareDevTurkish() {
 
 
   return (
-    <div className='min-h-screen flex flex-row md:flex-col max-h-screen md:max-h-full  sm:flex-col w-full'>
+    <div className='min-h-screen flex flex-col   w-full'>
         {/* left............................... */}
-        <div className='flex flex-col justify-between container w-2/6 
-        md:w-full bg-[#000000b4] '>     
-          <h1 className= 'pt-16 text-white text-center text-2xl py-2 '>
-            Yazılım geliştirme
-          </h1>
-            
+        <div className='flex flex-col justify-between container  w-full bg-[#00000070] '>     
+      
+          <Link href="/galleryT">
+       <div className=' items-center flex  w-full border-y-2 justify-around md:px-[4%] px-[10%]'>
+      
+             <h3 className= 'py-4  text-[#4ca8cc] text-center text-2xl sm:text-sm whitespace-nowrap px-2'>
+             Yazılım geliştirme
+            </h3>
            
+
+           <div className='grid  grid-cols-3  w-3/6  '>
+            <h3 className= ' text-white text-center sm:text-sm px-4 whitespace-nowrap'> Android </h3>
+            <h3 className= ' text-white text-center sm:text-sm px-4  whitespace-nowrap'> IOS </h3>
+            <h3 className= ' text-white text-center sm:text-sm px-4 whitespace-nowrap '> Web </h3>
+          </div>
+          </div>
+  </Link>
           {/* ................................................................ */}
-          <div className='flex h-3/4 min-h-[450px] flex-col justify-center'>
+          <div className='flex  min-h-[450px] flex-col justify-center'>
             <Slider2   
            img1='/images/1.png' img2='/images/cat.png' 
            img3='/images/3.png' img4='/images/fibex2.png'
@@ -128,33 +138,13 @@ export default function SoftwareDevTurkish() {
           </div>
 
           {/* .......................................................................... */}
-        <div>
-          <Link href="/galleryT">
-          <h1 className='cursor-pointer text-center py-4 bg-[#0f1a20f6] text-white border-y-2'>
-            Projelerde Keşfet
-            </h1>
-          </Link>
-        </div>
+  
 
-          <div className='grid py-4 grid-cols-4 divide-x'>
-            <h1 className= ' text-white text-center '>
-              Android
-            </h1>
-            <h1 className= ' text-white text-center '>
-              IOS
-            </h1>
-            <h1 className= ' text-white text-center '>
-              Windows
-            </h1>           
-            <h1 className= ' text-white text-center '>
-              Web
-            </h1>
-          </div>
 
        </div>
    {/* right............................. */}
        {/* acordion................................................. */}     
-       <div className="w-4/6 md:w-full bg-[#000000c5]">
+       <div className="w-full md:w-full bg-[#00000070]">
             <div className='flex justify-around w-full py-6 flex-row'>
                 <h1 className='text-left w-1/2  text-gray-400 tracking-widest  text-xl md:text-lg '>  
                   {/* <span>{text}</span> */}

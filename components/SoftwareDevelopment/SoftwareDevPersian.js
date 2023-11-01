@@ -125,10 +125,10 @@ export default function SoftwareDevPersian() {
 {/* right............................... */}
   
 <div className='flex flex-col justify-between   container w-full 
-        md:w-full bg-[#000000b4] '>
+        md:w-full '>
 
   <Link href="/galleryP">
-   <div className='bg-[#0f1a20f6] items-center flex flex-row-reverse w-full border-y-2 justify-around'>
+   <div className='items-center bg-[#00000070] flex flex-row-reverse w-full border-y-2 justify-around md:px-[4%] px-[10%]'>
       
              <h1 className= 'py-4  text-[#4ca8cc] text-center text-2xl sm:text-sm whitespace-nowrap px-2'>
               توسعه پلتفرم
@@ -146,7 +146,7 @@ export default function SoftwareDevPersian() {
 
          
 
-          <div className='flex pt-4 flex-col min-h-[450px] bg-[#000000a8] justify-center'>
+          <div className='flex pt-4 flex-col min-h-[450px] bg-[#00000070] justify-center'>
             <p className='text-gray-400 text-center px-[5%] py-6'> رابط های کاربری تحت وب و موبایل اختصاصی, بر پایه جاوا اسکریپت و استاندارد های جهانی </p>
             <Slider2   
             img1='/images/1.png' img2='/images/cat.png' 
@@ -175,7 +175,7 @@ export default function SoftwareDevPersian() {
 
                 
     {/* acordion................................................. */}     
-    <div className="w-full md:w-full bg-[#000000c5]">
+    <div className="w-full md:w-full bg-[#00000070]">
             <div className='flex justify-around w-full py-6  flex-row-reverse'>
                 <h1 className='text-right w-1/2  text-gray-400 px-[5%]  text-md  '>  
                   تجربه های ما    </h1>

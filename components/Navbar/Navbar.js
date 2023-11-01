@@ -19,8 +19,8 @@ function Navbar() {
                                items-center no-underline  ">
                                  <Image  src={flagE} height='50' width='50'   alt="onlin ceo" 
                                  className='w-14 md:w-10 p-1 '/>
-                                 <h2 className=" text-center  text-sm tracking-wide"> 
-                                 English</h2>
+                                 {/* <h2 className=" text-center  text-sm tracking-wide"> 
+                                 English</h2> */}
                                 </div>
                             </li>
                         </ActiveLink>
@@ -31,8 +31,8 @@ function Navbar() {
                                items-center no-underline  ">
                                   <Image  src={flagT} height='50' width='50'   alt="onlin ceo" 
                                  className='w-14 md:w-10 p-1 '/>
-                                   <h2 className=" text-center  text-sm tracking-wide"> 
-                                    Türkçe</h2>
+                                   {/* <h2 className=" text-center  text-sm tracking-wide"> 
+                                    Türkçe</h2> */}
                                 </div>
                             </li>
                         </ActiveLink>
@@ -45,8 +45,8 @@ function Navbar() {
                                items-center no-underline  ">
                                   <Image  src={flagP} height='50' width='50'  alt="onlin ceo" 
                                  className='w-14 p-1 md:w-10 '/>
-                                  <h2 className=" text-center  text-sm tracking-wide"> 
-                                   فارسی</h2>
+                                  {/* <h2 className=" text-center  text-sm tracking-wide"> 
+                                   فارسی</h2> */}
                                 </div>
                             </li>
                         </ActiveLink>

@@ -102,7 +102,7 @@ const handleChange = ({ target }) =>
                        <div className='flex justify-center pb-2'>
                             <h1 className="text-2xl text-right border-b-2  left-14  sm:text-lg
                              text-white  py-4  w-full  ">
-                                     پلتفرم های یکپارچه مدیریت آنلاین یکبار برای همیشه 
+                                     پلتفرم های یکپارچه  یکبار برای همیشه 
                             </h1>
                        </div>
                             <h1 className="font-extrabold text-right text-2xl  sm:pt-4 
