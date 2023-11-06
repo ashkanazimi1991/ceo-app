@@ -482,7 +482,7 @@ const restaurant = () => {
 
     >
       <video
-        className=" w-full h-full object-cover md:object-contain "
+        className=" w-full h-full object-contain "
         // ref={videoRef}
         muted
         loop
@@ -499,7 +499,7 @@ const restaurant = () => {
     
     >
       <video
-        className=" w-full h-full object-cover md:object-contain"
+        className=" w-full h-full object-contain"
         // ref={videoRef}
         muted
         loop
@@ -517,7 +517,7 @@ const restaurant = () => {
     
     >
       <video
-        className=" w-full h-full object-cover md:object-contain "
+        className=" w-full h-full object-contain "
         // ref={videoRef}
         muted
         loop
