@@ -70,7 +70,7 @@ const handleChange = ({ target }) =>
     }
   };
     return (
-        <div>
+        <div className='[#07090aec]'>
           <Head>
                 <meta name="description" content="CEO" />
                 <link rel="icon" href="/images/2.png" />
@@ -79,17 +79,27 @@ const handleChange = ({ target }) =>
                 <meta name="theme-color" content="#000"/>
                 <link rel='manifest' href='/manifest.json' />
          </Head>
+
+         <Image
+             className=" fixed -z-20 o  object-cover h-screen "
+             src="/images/HeroSpace.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+      <Image
+             className=" fixed -z-10  animate-pulse bottom-0 object-contain  "
+             src="/images/spaceStart.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+
          <div className="bg-gradient-to-r from-black to-[#14141475] 
           flex justify-center ">
                     
                 <div className='relative  w-full'>              
-                <Image
-                      className=" fixed -z-20  w-[100%] md:w-full object-cover h-full 
-                       opacity-100 sm:opacity-100"
-                  src="/images/bb.webp"
-                  width='1200'
-                   height='800'
-                    alt="CEO"/>
+            
                     <Link href='/persian'>
                     <BsArrowLeft className='fixed z-20 bg-[#1E9F93] p-2 ring-white ring-2 
                       rounded-full  my-4 ml-6  sm:text-3xl text-5xl text-[#fff]
@@ -100,22 +110,22 @@ const handleChange = ({ target }) =>
                         <div className="flex flex-col  justify-around py-[25%] pl-[4%] 
                          text-left">
                        <div className='flex justify-center pb-2'>
-                            <h1 className="text-2xl text-right border-b-2  left-14  sm:text-lg
+                            <h1 className="text-2xl text-right border-b-2 border-[#994dac3f] left-14  sm:text-lg
                              text-white  py-4  w-full  ">
-                                     پلتفرم های یکپارچه  یکبار برای همیشه 
-                            </h1>
+                                     برنامه نویسی نرم افزارهای یکپارچه تحت وب و موبایل
+                                                                 </h1>
                        </div>
-                            <h1 className="font-extrabold text-right text-2xl  sm:pt-4 
+                            <h1 className=" text-right text-xl  sm:pt-4 
                              text-[#61B0D1] sm:text-lg">
-                            ایده های جدید خود را به واقعیت تبدیل کنید
-                            </h1>
+                            قابل توسعه و مقیاس پذیر
+                                                        </h1>
                             <p className=" mt-3 sm:leading-relaxed  
                             text-right text-sm text-white 
                             ">
                           با داشبورد های مدیریت پروژه مجموعه مدیریت آنلاین به صورت لحظه ای از پیشرفت پروژه های خود با خبر شوید
                             </p>
 
-                            <div className='flex flex-row   mt-4 border-y-2'>
+                            <div className='flex flex-row   mt-4 border-y-2 border-[#994dac3f]'>
 
                                     <div className='flex flex-row md:flex-col  justify-around items-center
                                      w-3/4'>
@@ -129,7 +139,7 @@ const handleChange = ({ target }) =>
                                          </Link> */}
                                        </div>
                                        <div className='py-5'>
-                                        <h1 className='text-white '>Turkiye - Istanbul</h1>
+                                        <h1 className='text-white '>Türkiye - Istanbul</h1>
                                          <Link href='tel:+905528258841'>
                                             <h1 className='text-white '>+90 552 825 8841</h1>
                                          </Link> 
@@ -146,7 +156,7 @@ const handleChange = ({ target }) =>
 
                               
 
-                                <div className='grid grid-cols-2 sm:grid-cols-1 border-l-2 pl-5 place-content-center   w-1/4'>
+                                <div className='grid grid-cols-2 sm:grid-cols-1 border-l-2 border-[#994dac3f] pl-5 place-content-center   w-1/4'>
                                 
                                     <div>
                                         <Link href='https://t.me/AshkanAzimiii' target='_blank'  aria-label='telegram'>
@@ -178,22 +188,30 @@ const handleChange = ({ target }) =>
 {/* ......................................... */}
                         </div>
                     
+
+                        {/* <div className=' shadow-2xl shadow-[#994dacbe] bg-[#3e1a6e44] mr-2 rounded-lg'>
+                      <h3 className='text-gray-100 animate-bounce    shadow-slate-100 px-5 py-2  '>                  
+                         Contact US
+                           </h3> */}
+
+
+
                     </div>
                     <Link href='/whyP'>
-                      <div className='w-full border-y-2 flex justify-center items-center bg-[#0c303fa9]'>
+                      <div className=' shadow-xl shadow-[#994dac2f]  animate-pulse  flex justify-center items-center '>
                         <HiArrowNarrowLeft className=' my-4 w-10 animate-pulse text-2xl text-[#fff] cursor-pointer '/> 
-                        <h2 className='text-white  w-full py-2 text-center  '>چرا مجموعه مدیریت آنلاین؟</h2>
+                        <h2 className='text-white   py-2 text-center  '>سوالات متداول و نمونه های همسان </h2>
 
                       </div>
                     </Link>
                                 
 {/* ..................................order........................ */}
                 
-                    <div className=' w-full'>
+                    <div className=' w-full '>
                       <OrderP/>
                     </div>
 {/* .....................................form......................................... */}
-                    <div className='py-4 bg-[#000000cb]'>
+                    <div className='py-4 '>
                     <ChakraProvider theme={theme}>
                         <Container maxW="600px" mt={2}>
                             <Heading></Heading>
@@ -210,7 +228,7 @@ const handleChange = ({ target }) =>
                             </FormControl>
 
                             <FormControl isRequired mb={2} isInvalid={touched.email && !values.email}>
-                                <FormLabel color='gray.300' dir='rtl' >شماره تماس یا ایمیل</FormLabel>
+                                <FormLabel color='gray.300' dir='rtl'  >شماره تماس یا ایمیل</FormLabel>
                                 <Input type='email' name='email' color='gray.300'  value={values.email} onChange={handleChange} onBlur={onBlur}/>
                                 <FormHelperText>اطلاعات شما به هیچ وجه به اشتراک گذاشته نمی شود</FormHelperText>
                                 <FormErrorMessage>Required</FormErrorMessage>
@@ -218,13 +236,13 @@ const handleChange = ({ target }) =>
 
 
                             <FormControl isRequired mb={2} isInvalid={touched.subject && !values.subject}>
-                                <FormLabel color='gray.300' dir='rtl' >عنوان پروژه</FormLabel>
+                                <FormLabel color='gray.300' dir='rtl' >عنوان </FormLabel>
                                 <Input type='text'  dir='rtl' name='subject' color='gray.300' value={values.subject} onChange={handleChange} onBlur={onBlur}/>
                                 <FormErrorMessage>Required</FormErrorMessage>
                             </FormControl>
 
                             <FormControl isRequired mb={2} isInvalid={touched.message && !values.message}>
-                                <FormLabel color='gray.300' dir='rtl' >توضیحاتی در مورد پروژه</FormLabel>
+                                <FormLabel color='gray.300' dir='rtl' > پیام  </FormLabel>
                                 <Textarea type='text'  dir='rtl' color='gray.300' name='message' rows={6} value={values.message} onChange={handleChange} onBlur={onBlur}/>
                                 <FormErrorMessage>Required</FormErrorMessage>
                             </FormControl>

@@ -55,7 +55,7 @@ function HeroPersian() {
                       <div className=' shadow-2xl shadow-[#994dacbe] bg-[#3e1a6e44] mr-2 rounded-lg'>
                       <h3 className='text-gray-100 animate-bounce    shadow-slate-100 px-5 py-2  '>
 
-                           مشاوره رایگان </h3>
+                           مشاوره و پشتیبانی </h3>
 
                       </div>
                     </Link>

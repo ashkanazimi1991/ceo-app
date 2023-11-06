@@ -11,7 +11,7 @@ const theme= extendTheme({fonts})
 
 function OrderP() {
   return (
-    <div className='bg-[#000000cb] px-[20%] md:px-[10%] sm:px-[2%] space-y-4 py-6'>
+    <div className=' px-[20%] md:px-[10%] sm:px-[2%] space-y-4 py-6'>
          <ChakraProvider theme={theme}>
                 {/* <Progress size='xs' isIndeterminate /> */}
             <div className='flex w-full justify-center space-x-2 items-center'>

@@ -27,12 +27,15 @@ function Hero() {
              alt="onlineceo"
             />
       
-
+{/* .............................................. */}
+{/* .............................................. */}
 
       <div className=' w-full  flex flex-col justify-center h-screen '>
        
               <div className='flex flex-col justify-center  h-full   '>
                   <div className='  '>
+                  {/* <iframe src='https://my.spline.design/iphone14procopy-ee304b125516ac467883135562e0881a/' frameborder='0' width='400px' height='800px'></iframe> */}
+
                   <h1 className='text-gray-200 text-5xl md:text-2xl  font-bold 
                  text-center'>ONLINE CEO <br></br> Developers Community</h1>
                       

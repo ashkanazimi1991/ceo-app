@@ -33,10 +33,10 @@ const drappPersian = () => {
     const [showModel, setShowModal] = useState(false);
     return (
 <ChakraProvider theme={theme}>
-        <div className='w-full h-auto lg:h-full'>
+        <div className='w-full '>
             <Head>
                 <title>Dr App Info</title>
-                <meta name="description" content="نرم افزار جامع مطب"/>
+                <meta name="description" content="نرم افزار پزشکان پاستور"/>
                 <meta name="theme-color" content="#142028"/>
                 <link rel="icon" href="/images/2.png" />
                 <link rel='manifest' href='/manifest.json' />
@@ -49,23 +49,57 @@ const drappPersian = () => {
                 cursor-pointer'/>
             </Link>
             <Image
-                className=" fixed -z-20  w-[100%] md:w-screen object-cover min-h-screen 
-                opacity-100 sm:opacity-100"
-                src="/images/drbg.jpg"
-                width='1200'
-                height='800'
-                alt="CEO"/>
-             <div className="min-h-screen flex flex-row  md:flex-col-reverse ">
-   
-   {/* left........................................................... */}
-   <div className='flex flex-col justify-start overflow-y-scroll 
-   scrollbar-hide h-screen bg-[#020507c9]   w-4/6  
-      md:w-full md:h-full '>
+             className=" fixed -z-20 o  object-cover h-screen "
+             src="/images/HeroSpace.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+      <Image
+             className=" fixed -z-10  animate-pulse bottom-0 object-contain  "
+             src="/images/spaceStart.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+  <div className="min-h-screen flex flex-col-reverse ">
+
+  
+
+   {/* ........................................................... */}
+   <div className='flex flex-col justify-start  
+     w-full  '>
 
       <div className='grid grid-cols-2 xl:grid-cols-1 gap-6 mt-[10%] mx-[10%] md:mx-4  my-4'>
-       
-      <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی مراکز درمانی</p>
+         {/* ........................................... */}
+         <div className=' rounded-md  w-full h-full    '>
+          <p className='text-white text-center  text-md sm:px-2 sm:text-sm  py-4 border-b-2 border-[#994dac3f]'>پلتفرم جامع و اختصاصی کلینیک های زیبایی</p>
+          <div className='flex flex-col sm:justify-center m-4 justify-around'>
+          <div className="flex justify-around space-x-2">
+         
+          <Link href='/dr_admin' >
+           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
+            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
+           </div>
+           </Link>
+
+           <Link href='https://yektaesthetic.com/' target='_blank'  >
+           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
+             rounded items-center  ' >
+            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
+            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
+           </div>
+          </Link>
+
+        </div>
+        
+          </div>
+        </div>
+        {/* ................................. */}
+      <div className=' rounded-md  w-full h-full    '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-[#994dac3f]'>پلتفرم جامع و اختصاصی مراکز درمانی</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -89,9 +123,10 @@ const drappPersian = () => {
         
           </div>
         </div>
+      
 
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی مطب</p>
+        <div className=' rounded-md  w-full h-full    '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-[#994dac3f]'>پلتفرم جامع و اختصاصی مطب</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -116,8 +151,8 @@ const drappPersian = () => {
           </div>
         </div>
 
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 sm:text-sm py-4 border-b-2 border-gray-700'>پلتفرم جامع و اختصاصی کلینیک های دندان پزشکی</p>
+        <div className=' rounded-md  w-full h-full    '>
+          <p className='text-white text-center  text-md sm:px-2 sm:text-sm py-4 border-b-2 border-[#994dac3f]'>پلتفرم جامع و اختصاصی کلینیک های دندان پزشکی</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -143,34 +178,10 @@ const drappPersian = () => {
         </div>
 
 
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 sm:text-sm  py-4 border-b-2 border-gray-700'>پلتفرم جامع و اختصاصی کلینیک های زیبایی</p>
-          <div className='flex flex-col sm:justify-center m-4 justify-around'>
-          <div className="flex justify-around space-x-2">
-         
-          <Link href='/dr_admin' >
-           <div className='flex justify-around border-2 border-rose-500 hover:border-green-400 cursor-pointer
-             rounded items-center  ' >
-            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs whitespace-nowrap'> محیط مدیریت</p>
-            <FcComboChart className="text-2xl mr-4 text-rose-500 hover:text-green-400" />
-           </div>
-           </Link>
-
-           <Link href='/dr_front' >
-           <div className='flex justify-around border-2 border-Indigo-400 hover:border-green-400 cursor-pointer
-             rounded items-center  ' >
-            <p className='text-gray-300 text-sm px-4 py-2 sm:text-xs  whitespace-nowrap'>محیط مراجعه کنندگان</p>
-            <FaUsers className="text-xl mr-4 text-rose-300 hover:text-green-400" />
-           </div>
-          </Link>
-
-        </div>
-        
-          </div>
-        </div>
+       
   
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 sm:text-sm  py-4 border-b-2 border-gray-700'>  پلتفرم جامع و اختصاصی کلینیک روانشناسی</p>
+        <div className=' rounded-md  w-full h-full    '>
+          <p className='text-white text-center  text-md sm:px-2 sm:text-sm  py-4 border-b-2 border-[#994dac3f]'>  پلتفرم جامع و اختصاصی کلینیک روانشناسی</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -195,8 +206,8 @@ const drappPersian = () => {
           </div>
         </div>
 
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی ساختمان پزشکان</p>
+        <div className=' rounded-md  w-full h-full    '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-[#994dac3f]'>پلتفرم جامع و اختصاصی ساختمان پزشکان</p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -221,8 +232,8 @@ const drappPersian = () => {
           </div>
         </div>
 
-        <div className=' rounded-md bg-[#060e1b] w-full h-full   shadow-2xl '>
-          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-gray-700'>پلتفرم جامع و اختصاصی بیمارستان </p>
+        <div className=' rounded-md  w-full h-full    '>
+          <p className='text-white text-center  text-md sm:px-2 py-4 border-b-2 sm:text-sm  border-[#994dac3f]'>پلتفرم جامع و اختصاصی بیمارستان </p>
           <div className='flex flex-col sm:justify-center m-4 justify-around'>
           <div className="flex justify-around space-x-2">
          
@@ -349,9 +360,9 @@ const drappPersian = () => {
             </table>
            </div>
        </div>
-       <div className='flex justify-center w-1/2 items-center  lg:w-full p-[1%]'>
+       <div className='flex justify-center w-1/4 lg:w-2/3 md:w-1/2 sm:w-full items-center   p-[1%]'>
        <Image
-       className="lg:w-3/4 items-center object-contain"
+       className="items-center object-contain"
        src="/images/pastor1.png"
        width='1200'
        height='800'
@@ -374,9 +385,9 @@ const drappPersian = () => {
  
 </div>
 
-<div className='flex justify-center w-1/2 items-center  lg:w-full p-[1%]'>
+<div className='flex justify-center w-1/4 lg:w-2/3 md:w-1/2 sm:w-full items-center   p-[1%]'>
        <Image
-       className="lg:w-3/4 items-center object-contain"
+       className=" items-center object-contain"
        src="/images/pastor2.png"
        width='1200'
        height='800'
@@ -403,9 +414,9 @@ const drappPersian = () => {
    </div>
 </div>
 
-<div className='flex justify-center w-1/2 items-center  lg:w-full p-[1%]'>
+<div className='flex justify-center w-1/4 lg:w-2/3 md:w-1/2 sm:w-full items-center   p-[1%]'>
        <Image
-       className="lg:w-3/4 items-center object-contain"
+       className=" items-center object-contain"
        src="/images/pastor4.png"
        width='1200'
        height='800'
@@ -430,9 +441,9 @@ const drappPersian = () => {
    </div>
 </div>
 
-<div className='flex justify-center w-1/2 items-center  lg:w-full p-[1%]'>
+<div className='flex justify-center w-1/4 lg:w-2/3 md:w-1/2 sm:w-full items-center   p-[1%]'>
        <Image
-       className="lg:w-3/4 items-center object-contain"
+       className=" items-center object-contain"
        src="/images/pastor5.png"
        width='1200'
        height='800'
@@ -563,11 +574,9 @@ const drappPersian = () => {
 
 
 
+   {/* ........................................................... */}
 
-   {/* right................................................
-   ...........................................................
-   ...................................................... */}
-   <div className='flex min-h-screen py-6 px-4 flex-col  justify-around w-2/6 bg-[#040f14e1] md:w-full'>
+   <div className='flex max-h-screen py-6 px-4 flex-col  justify-around  w-full'>
 {/* ........................... */}
    <div className='flex flex-col justify-center items-center'>
      <h1 className='text-center px-[10%] leading-10  text-white text-ئی '>
@@ -592,8 +601,8 @@ const drappPersian = () => {
             </div>
      <div className='flex w-full justify-center '>
       <Image
-            className="w-[80%]  object-contain"
-            src="/images/pastor3.png"
+            className="w-1/3 md:w-1/2 sm:w-full  object-contain"
+            src="/images/pastorhero.png"
             width='800'
             height='800'
             alt="CEO"
@@ -602,7 +611,7 @@ const drappPersian = () => {
        </div>      
 {/* ........................................... */}
 
-<div className='grid py-4 grid-cols-4 divide-x bg-[#0f1a20f6] border-y-2'>
+<div className='grid py-4 grid-cols-4 divide-x bg-[#0a171f56] border-y-2 border-[#994dac3f]'>
              <h1 className= ' text-white text-center '> اندروید</h1>
              <h1 className= ' text-white text-center '>ای او اس</h1>              
              <h1 className= ' text-white text-center '> ویندوز </h1>
@@ -612,7 +621,47 @@ const drappPersian = () => {
 
 
 
+ {/* ...........videoGallery......... */}
+{/* 
+ <div className='flex justify-center items-center w-full '>
+        <div className='grid grid-cols-3 gap-4'>
+            <div className=' col-span-1 md:col-span-2 h-64 xl:h-96  w-full '> 
+                <video   controls  className="h-64 xl:h-96 rounded-md  object-cover w-full"  >
+                <source   src="/video/heroP.mp4"   type="video/mp4"  />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
+            <div className=' col-span-1 md:col-span-1 h-64 xl:h-96  w-full '> 
+
+            <video   controls  className="h-64 xl:h-96 w-full  rounded-md  object-cover "  >
+                <source   src="/video/heroP.mp4"   type="video/mp4"  />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+       
+            <div className=' col-span-1 md:col-span-1 h-64 xl:h-96  w-full '> 
+
+            <video   controls  className="h-64 xl:h-96  rounded-md w-full object-cover "  >
+                <source   src="/video/heroP.mp4"   type="video/mp4"  />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div className=' col-span-1 md:col-span-2 h-64 xl:h-96  w-full '> 
+                <video   controls  className="h-64 xl:h-96 rounded-md  object-cover w-full"  >
+                <source   src="/video/heroP.mp4"   type="video/mp4"  />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            
+     
+
+
+        </div>
+    </div> */}
+   {/* ...........videoGallery......... */}
 
 
 

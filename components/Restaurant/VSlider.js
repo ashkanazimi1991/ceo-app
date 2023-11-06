@@ -13,7 +13,7 @@ export default class VSlider extends Component {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        vertical: true,
+        vertical: false,
         speed: 2000,
         verticalSwiping: true,
         beforeChange: function(currentSlide, nextSlide) {

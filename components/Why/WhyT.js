@@ -2,18 +2,21 @@ import React from 'react';
 import { BiChevronsDown } from 'react-icons/bi';
 import ChartSection from '../chart/ChartSection';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
+import Link from 'next/link';
 
 const WhyT = () => {
   return (
     
     <div className="group px-[10%] md:px-[2%] sm:px-0 min-h-screen flex flex-col justify-around    bg-[#07090aec] p-3" >
+        <Link href="/whyT">
         <div className="flex items-center py-2 border-b-2  justify-between px-[5%] ">
+            
              <h2 className="text-xl  md:text-lg text-center  text-gray-400 ">
              NEDEN BİZ ?
              </h2>
              <AiOutlineInfoCircle className="text-white text-2xl" />
         </div>
-
+        </Link>
         <div className='w-full pt-5  flex flex-col px-40 2xl:px-20 sm:px-5  justify-center'>
 
             <p className="my-4 px-5 w-full text-gray-400">

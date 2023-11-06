@@ -22,7 +22,7 @@ const pasteur = () => {
     <div className='w-full h-auto lg:h-full'>
     <Head>
      <title>ONLINE CEO</title>
-     <meta name="description" content="نرم افزار دامپزشکی" />
+     <meta name="description" content="نرم افزار پاستور" />
      <meta name="theme-color" content="#142028"/>
      <link rel="icon" href="/images/1.png" />
      <link rel='manifest' href='/manifest.json' />
@@ -32,18 +32,24 @@ const pasteur = () => {
     cursor-pointer'/>
    </Link>
    <Image
-        className=" fixed -z-20  w-[100%] md:w-screen object-cover min-h-screen 
-        opacity-100 sm:opacity-100"
-        src="/images/bb.webp"
-        width='1200'
-        height='800'
-        alt="CEO"/>
-   <div className="min-h-screen flex flex-row-reverse  md:flex-col-reverse ">
+             className=" fixed -z-20 o  object-cover h-screen "
+             src="/images/HeroSpace.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+      <Image
+             className=" fixed -z-10  animate-pulse bottom-0 object-contain  "
+             src="/images/spaceStart.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+   <div className="min-h-screen flex flex-col-reverse ">
    
     {/* left........................................................... */}
     <div className='flex flex-col justify-start overflow-y-scroll 
-    scrollbar-hide h-screen bg-[#0f1a20f6]   w-4/6  
-       md:w-full md:h-full '>
+    scrollbar-hide h-screen    w-full md:h-full '>
 {/* ...............................info1............................ */}
     <div className='flex flex-row-reverse  lg:flex-col-reverse w-full justify-center items-center p-[5%] '>
 
@@ -261,7 +267,7 @@ Management dashboards are exclusive and coded according to the needs of the coll
     {/* right................................................
     ...........................................................
     ...................................................... */}
-    <div className='flex min-h-screen py-6 px-4 flex-col  justify-around w-2/6 bg-[#040f14e1] md:w-full'>
+    <div className='flex min-h-screen py-6 px-4 flex-col  justify-around   w-full'>
  {/* ........................... */}
     <div>
       <h1 className='text-center px-[10%] leading-10  text-white text-xl '>

@@ -4,12 +4,12 @@ import { ChakraProvider, CircularProgress, Progress, Tabs, TabList,Tab,TabPanels
 
 function Order() {
   return (
-    <div className='bg-[#000000cb] px-[20%] md:px-[10%] sm:px-[2%] space-y-4 py-6'>
+    <div className=' px-[20%] md:px-[10%] sm:px-[2%] space-y-4 py-6'>
         <ChakraProvider>
                 {/* <Progress size='xs' isIndeterminate /> */}
             <div className='flex w-full justify-center space-x-2 items-center'>
                 {/* <CircularProgress isIndeterminate color='green.300' /> */}
-                <h2 className='text-blue-400 text-left text-lg  '> 4 steps of  your project from the start to the end </h2>
+                <h2 className='text-blue-400 text-center px-4 text-lg  '> How To Order Project </h2>
             </div>
             <div className=''>
                 <Tabs isFitted>

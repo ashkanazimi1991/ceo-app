@@ -4,7 +4,7 @@ import Link from "next/link"
 import Team from '../components/Member/Team';
 import { FaInstagram } from 'react-icons/fa';
 import { TbBrandTelegram } from "react-icons/tb";
-import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineMail, HiArrowNarrowRight } from "react-icons/hi";
 import { FiGithub } from "react-icons/fi";
 import { BsArrowLeft } from "react-icons/bs";
 import Image from 'next/image';
@@ -13,6 +13,7 @@ import {Container, FormControl, FormLabel,Textarea, FormHelperText, Text,
 import { ChakraProvider } from '@chakra-ui/react'
 import { sendContactForm } from '../components/lib/api';
 import dynamic from "next/dynamic";
+
 
 
 const Order = dynamic(() => import('../components/Contact/Order/Order'))
@@ -74,17 +75,26 @@ const handleChange = ({ target }) =>
                 <meta name="theme-color" content="#000"/>
                 <link rel='manifest' href='/manifest.json' />
          </Head>
+
+         <Image
+             className=" fixed -z-20 o  object-cover h-screen "
+             src="/images/HeroSpace.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
+      <Image
+             className=" fixed -z-10  animate-pulse bottom-0 object-contain  "
+             src="/images/spaceStart.webp"
+             width='4377'
+             height='2043'
+             alt="onlineceo"
+            />
          <div className="bg-gradient-to-r from-black to-[#14141475] 
           flex justify-center ">
                     
                 <div className='relative  w-full'>              
-                <Image
-                      className=" fixed -z-20  w-[100%] md:w-full object-cover h-full 
-                       opacity-100 sm:opacity-100"
-                  src="/images/bb.webp"
-                  width='1200'
-                   height='800'
-                    alt="CEO"/>
+              
                     <Link href='/'>
                     <BsArrowLeft className='fixed z-20 bg-[#1E9F93] p-2 ring-white ring-2 
                       rounded-full  my-4 ml-6  sm:text-3xl text-5xl text-[#fff]
@@ -95,7 +105,7 @@ const handleChange = ({ target }) =>
                         <div className="flex flex-col  justify-around py-[25%] pl-[4%] 
                          text-left">
                        <div className='flex justify-center pb-2'>
-                            <h1 className="text-6xl border-b-2  left-14  sm:text-3xl
+                            <h1 className="text-6xl border-b-2 border-[#994dac3f] left-14  sm:text-3xl
                              text-white 
                                font-extrabold py-4  w-full whitespace-nowrap  ">
                                      Build to Last  
@@ -112,7 +122,7 @@ const handleChange = ({ target }) =>
                               and see  how it grows  daily.
                             </p>
 
-                            <div className='flex flex-row   mt-4 border-y-2'>
+                            <div className='flex flex-row   mt-4 border-y-2 border-[#994dac3f]'>
 
                                     <div className='flex flex-row md:flex-col  justify-around items-center
                                      w-3/4'>
@@ -126,7 +136,7 @@ const handleChange = ({ target }) =>
                                          </Link> */}
                                        </div>
                                        <div className='py-5'>
-                                        <h1 className='text-white '>Turkiye - Istanbul</h1>
+                                        <h1 className='text-white '>Türkiye - Istanbul</h1>
                                          <Link href='tel:+905528258841'>
                                             <h1 className='text-white '>+90 552 825 8841</h1>
                                          </Link> 
@@ -143,7 +153,7 @@ const handleChange = ({ target }) =>
 
                               
 
-                                <div className='grid grid-cols-2 sm:grid-cols-1 border-l-2 pl-5 place-content-center   w-1/4'>
+                                <div className='grid grid-cols-2 sm:grid-cols-1 border-l-2 border-[#994dac3f] pl-5 place-content-center   w-1/4'>
                                 
                                     <div>
                                         <Link href='https://t.me/AshkanAzimiii' target='_blank'  aria-label='telegram'>
@@ -177,8 +187,10 @@ const handleChange = ({ target }) =>
                     
                     </div>
                     <Link href='/whyE'>
-                      <div className='w-full h- flex justify-center items-center'>
-                        <h2 className='text-white border-y-2 w-full py-2 text-center bg-[#0c303fa9]'>WHY US?</h2>
+                    <div className=' shadow-xl shadow-[#994dac2f]  animate-pulse  flex justify-center items-center '>
+                        <h2 className='text-white   py-2 text-center  '>WHY ONLINE CEO ? </h2>
+                        <HiArrowNarrowRight className=' my-4 w-10 animate-pulse text-2xl text-[#fff] cursor-pointer '/> 
+
                       </div>
                     </Link>
                                 
@@ -188,7 +200,7 @@ const handleChange = ({ target }) =>
                       <Order/>
                     </div>
 {/* .....................................form......................................... */}
-                    <div className='py-4 bg-[#000000cb]'>
+                    <div className='py-4 ]'>
                    <ChakraProvider>
                         <Container maxW="600px" mt={2}>
                             <Heading></Heading>

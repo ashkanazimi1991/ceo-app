@@ -26,9 +26,10 @@ const RestaurantHeaderP = () => {
       {/* <BsSearchHeart className='text-gray-800 ml-4 text-xl'/> */}
     </div>
     {/* btn........................... */}
-    <div className=' w-full flex justify-around  items-center px-[5%]'>
-    <BiShoppingBag className='text-gray-800 text-2xl mx-4'/>
+    <div className=' w-full flex justify-end  items-center px-[5%]'>
+    <BiShoppingBag className='text-gray-800 text-4xl mx-4'/>
     {/* <p className='text-gray-800 whitespace-nowrap md:hidden'>ثبت نام / ورود</p> */}
+    
     <div className='bg-orange-500 rounded-2xl mx-2 shadow-xl flex justify-around items-center'>
       <p className=' p-3 whitespace-nowrap text-gray-200  '>ثبت نام / ورود</p>
       <HiArrowNarrowRight className='text-gray-200 mr-2 text-2xl'/>
