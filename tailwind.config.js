@@ -6,9 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
+  fontFamily: {
       'sans': ['IRANSansWeb' ],
-    },
+    },  
     container: {
       center: true,
     },

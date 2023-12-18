@@ -2,7 +2,7 @@ import React ,{useState}from 'react';
 import Link from 'next/link'
 // import { useTypewriter } from 'react-simple-typewriter'
 import Acordian from '../Acordion/Acordion'
-import SliderMain from '../SliderMain/SliderMain'
+// import SliderMain from '../SliderMain/SliderMain'
 import dynamic from "next/dynamic";
 
 

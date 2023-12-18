@@ -16,20 +16,18 @@ const Team = () => {
 <div>
             <div className="container px-10  py-10 ">
                 <h1 className="text-3xl font-semibold text-center text-gray-500 
-                capitalize lg:text-2xl whitespace-nowrap dark:text-white">Our Executive Team</h1>
+                capitalize lg:text-2xl whitespace-nowrap dark:text-white sm:text-red-400">Our Executive Team</h1>
                               
-                <div className="grid grid-cols-3 min gap-8  px-[5%] mt-8 xl:mt-16 md:grid-cols-2
-                 xl:grid-cols-4
-                 sm:grid-cols-1">
+                <div className="grid grid-cols-4  gap-8  px-[5%] mt-8 xl:mt-16 xl:grid-cols-3 md:grid-cols-2  sm:grid-cols-1 ">
                     
-
+               {/* <div className=' grid grid-cols-3 sm:grid-cols-1'> */}
 
                     {/* ashkan......................................... */}
                     <div className="flex flex-col   justify-center items-center transition-colors
                      duration-200 py-10
                      transform  group hover:border  rounded-xl">
                         <Image width='100' height='100'
-                         src="/images/cv.png" alt="اشکان عظیمی " 
+                         src="/images/ashkanprofile.png" alt="اشکان عظیمی " 
                          className="object-cover w-32 h-32 rounded-full   brightness-95 ring-4 ring-gray-300"
                         />
                         <h1 className="mt-4 text-md   font-semibold text-gray-700 
@@ -113,7 +111,7 @@ const Team = () => {
              <div className="flex flex-col  justify-center items-center transition-colors duration-200
                      transform  group hover:border py-10 rounded-xl">
                         <Image width='200' height='100'
-                         src="/images/salar.jpg" alt="ا" 
+                         src="/images/salar.jpg" alt="برنامه نویسی" 
                          className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300"
                         />
                         <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
@@ -230,34 +228,7 @@ const Team = () => {
                     </div>
 
 
-            {/* parya......................................... */}
-                    <div className="flex flex-col  justify-center items-center transition-colors duration-200
-                     transform  group hover:border py-10 rounded-xl">
-                        <Image width='200' height='200'
-                         src="/images/parya.jpg" alt="Parya ghaderi " 
-                         className="object-cover w-32 brightness-95 h-32 rounded-full ring-4 ring-gray-300"
-                        />
-                        <h1 className="mt-4 text-md font-semibold text-gray-700 capitalize dark:text-white
-                         group-hover:text-white">Parya Ghaderi</h1>
-                        
-                        <h2 className="mt-2 text-gray-500 capitalize text-center dark:text-gray-300
-                         group-hover:text-gray-300">UI  Designer - FrontEnd Developer </h2>
-                        
-                        <div className="flex mt-3 -mx-2">
-                           <Link href='tel:'>
-                              <FiPhone className='text-xl text-[#f7f7f7] mx-2 mt-1 transition hover:text-teal-700/75 '/> 
-                            </Link> 
 
-
-                              <Link href="mailto:pariyaghaderi766@gmail.com" target='_blank'  aria-label='mail'>
-                                  <HiOutlineMail className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                              </Link>  
-
-                              <Link href='/' target='_blank'  aria-label='telegram'>
-                              <AiOutlineProfile className=' w-10 text-2xl text-[#fff] cursor-pointer '/> 
-                           </Link>
-                        </div>
-                    </div>
 
                         {/* ashkan......................................... */}
                   
@@ -337,7 +308,7 @@ const Team = () => {
                         
 
 
-                        <div className="flex flex-col  col-span-2 justify-center items-center transition-colors duration-200
+                        <div className="flex flex-col   justify-center items-center transition-colors duration-200
                      transform  group hover:border py-10 rounded-xl">
 
                           <div className="flex -space-x-4">
