@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Head from 'next/head';
 import Link from "next/link"
-import Team from '../components/Member/Team';
+import TeamP from '../components/Member/TeamP';
 import { FaInstagram } from 'react-icons/fa';
 import { TbBrandTelegram } from "react-icons/tb";
 import { HiOutlineMail, HiArrowNarrowLeft} from "react-icons/hi";
@@ -74,7 +74,7 @@ const handleChange = ({ target }) =>
           <Head>
                 <meta name="description" content="CEO" />
                 <link rel="icon" href="/images/2.png" />
-                <title>Contact CEO</title>
+                <title>ارتباط با ما </title>
                 <meta name="description" content="CEO Contact" />
                 <meta name="theme-color" content="#000"/>
                 <link rel='manifest' href='/manifest.json' />
@@ -110,17 +110,17 @@ const handleChange = ({ target }) =>
                         <div className="flex flex-col  justify-around py-[25%] pl-[4%] 
                          text-left">
                        <div className='flex justify-center pb-2'>
-                            <h1 className="text-2xl text-right border-b-2 border-[#994dac3f] left-14  sm:text-lg
+                            <h1 className="text-2xl  text-center border-b-2 border-[#994dac3f] left-14  sm:text-sm
                              text-white  py-4  w-full  ">
                                      برنامه نویسی نرم افزارهای یکپارچه تحت وب و موبایل
                                                                  </h1>
                        </div>
-                            <h1 className=" text-right text-xl  sm:pt-4 
+                            <h1 className=" text-center text-xl  sm:pt-4 
                              text-[#61B0D1] sm:text-lg">
                             قابل توسعه و مقیاس پذیر
                                                         </h1>
                             <p className=" mt-3 sm:leading-relaxed  
-                            text-right text-sm text-white 
+                            text-center text-sm text-white 
                             ">
                           با داشبورد های مدیریت پروژه مجموعه مدیریت آنلاین به صورت لحظه ای از پیشرفت پروژه های خود با خبر شوید
                             </p>
@@ -130,7 +130,7 @@ const handleChange = ({ target }) =>
                                     <div className='flex flex-row md:flex-col  justify-around items-center
                                      w-3/4'>
                                        <div className=' py-5'>
-                                        <h1 className='text-white '>Iran - Urmia</h1>
+                                        <h1 className='text-white text-center py-2'> ایران - ارومیه</h1>
                                          <Link href='tel:+984433384232'>
                                             <h1 className='text-white '>+9844 3338 4232</h1>
                                          </Link> 
@@ -139,13 +139,13 @@ const handleChange = ({ target }) =>
                                          </Link> */}
                                        </div>
                                        <div className='py-5'>
-                                        <h1 className='text-white '>Türkiye - Istanbul</h1>
+                                        <h1 className='text-white text-center py-2 '>ترکیه - استانبول</h1>
                                          <Link href='tel:+905528258841'>
                                             <h1 className='text-white '>+90 552 825 8841</h1>
                                          </Link> 
                                        </div>
                                        <div className='py-5'>
-                                        <h1 className='text-white '>UK - London </h1>
+                                        <h1 className='text-white text-center py-2 '>انگلیس - لندن </h1>
                                          <Link href='tel:+447418354868'>
                                             <h1 className='text-white '>+44 7418 354868</h1>
                                          </Link> 
@@ -259,7 +259,7 @@ const handleChange = ({ target }) =>
 
                     </div>
            
-                   <Team />
+                   <TeamP />
 {/* .......................................................... */}
                 </div>
          </div>

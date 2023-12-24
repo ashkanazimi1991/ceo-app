@@ -5,7 +5,7 @@ const ReactApexChart = dynamic(() => import ("react-apexcharts"), {ssr:false});
 
 export default class BenefitChart extends Component {
   constructor(props) {
-    super(props);
+    super(props);2
 
     this.state = {
       series: [
